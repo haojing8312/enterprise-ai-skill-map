@@ -1,0 +1,16 @@
+sources:
+  github:
+    - GitHub Trending
+    - GitHub Search sorted by stars/updated/created
+    - GitHub topics and public awesome lists
+  developer_social:
+    - X / Twitter developer posts
+    - Hacker News
+    - Reddit
+    - Product Hunt
+  directories:
+    - public skill directories
+    - public agent workflow repositories
+  internal_outputs:
+    - daily Skill briefings
+    - content team reviewed candidates

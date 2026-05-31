@@ -1,0 +1,41 @@
+skills:
+  - id: superpowers
+    name: obra/superpowers
+    url: https://github.com/obra/superpowers
+    license: MIT
+    source_type: github_repo
+    first_seen: 2026-05-31
+    last_verified: 2026-05-31
+    status: verified_public
+    scenarios:
+      - r-and-d
+      - operations-admin
+    capabilities:
+      - planning
+      - testing
+      - debugging
+      - acceptance-review
+    roles:
+      - AI coding assistant
+      - engineering manager
+      - digital employee orchestrator
+    value_summary: "把 spec、计划、测试、排障、验收这些动作前置，适合作为 AI 写码流程样本。"
+    best_for:
+      - "研发团队建立 AI 编码工作流"
+      - "数字员工任务分解与验收"
+    not_for:
+      - "无测试体系、想直接自动放权的团队"
+    risk_level: low
+    risks:
+      - "不能夸大为全自动自治"
+    evidence:
+      - type: github
+        note: "公开仓库，MIT 协议"
+    score:
+      ranking_growth: 0
+      usefulness: 28
+      reproducibility: 14
+      safety: 15
+      communication: 8
+      total: 65
+    review_notes: "可做样本，但不应神化。"
