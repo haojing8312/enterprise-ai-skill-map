@@ -42,7 +42,7 @@
 │   └── scoring-rules.md          # 收录评分规则
 ├── workflows/                    # 数字员工工作流样板
 ├── templates/                    # 新增条目模板
-└── reports/daily-skill-briefings/ # 每日 Skill 早报归档
+└── reports/skill-research/       # 首批 Skill 研究与分类报告
 ```
 
 ## 当前优先行业

@@ -8,7 +8,7 @@
 - [软件/互联网/研发组织](../industries/software-internet.md)：1 个 Skill
 - [零售/电商/客服密集型](../industries/retail-ecommerce.md)：1 个 Skill
 
-## 当前可用 Skill
+## 精选 Skill
 
 |Skill|行业|场景|风险|一句话用法|
 |---|---|---|---|---|

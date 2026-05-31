@@ -7,7 +7,7 @@
 - [AI 平台工程师](../roles/ai-platform.md)：1 个 Skill
 - [基础设施/运维负责人](../roles/infra-ops.md)：1 个 Skill
 
-## 当前可用 Skill
+## 精选 Skill
 
 |Skill|岗位|场景|风险|一句话用法|
 |---|---|---|---|---|

@@ -4,57 +4,41 @@
 
 内容团队用 AI 最大的问题不是产量，而是容易写成模板稿：像汇报、像通稿、没有现场感。先把资料、角度、人味和审核链路搭起来，再谈批量化。
 
-## 推荐 Skill
+## 典型岗位/数字员工
+- [开发工程师](../roles/engineering.md)：6 个 Skill
+- [运营自动化负责人](../roles/operations-automation.md)：5 个 Skill
+- [内容/市场运营负责人](../roles/content-marketing.md)：3 个 Skill
+- [内容研究助理](../roles/content-research.md)：3 个 Skill
+- [数字员工/Skill 设计师](../roles/digital-employee-designer.md)：3 个 Skill
+- [知识库运营](../roles/knowledge-ops.md)：2 个 Skill
+- [QA/测试负责人](../roles/qa-testing.md)：2 个 Skill
+- [文档处理专员](../roles/document-ops.md)：1 个 Skill
+- [法务/合规负责人](../roles/legal-compliance.md)：1 个 Skill
+- [产品经理](../roles/product-manager.md)：1 个 Skill
+- [Skill 观察研究员](../roles/skill-research.md)：1 个 Skill
+- [策略/行业研究员](../roles/strategy-research.md)：1 个 Skill
+- [工作流架构师](../roles/workflow-architecture.md)：1 个 Skill
 
-### langchain-ai/open_deep_research（open-deep-research）
+## 当前可用 Skill（10）
+|Skill|行业|岗位|风险|推荐用法|
+|---|---|---|---|---|
+|[browser-use/browser-use](https://github.com/browser-use/browser-use)|[软件/互联网/研发组织](../industries/software-internet.md)<br>[零售/电商/客服密集型](../industries/retail-ecommerce.md)<br>[通用企业/内部运营](../industries/general-enterprise.md)|[运营自动化负责人](../roles/operations-automation.md)<br>[开发工程师](../roles/engineering.md)<br>[QA/测试负责人](../roles/qa-testing.md)|medium|给网页流程自动化团队用，适合做采集、登录后操作和表单流转；生产账号、Cookie 和页面数据必须单独隔离。|
+|[apify/crawlee](https://github.com/apify/crawlee)|[零售/电商/客服密集型](../industries/retail-ecommerce.md)<br>[通用企业/内部运营](../industries/general-enterprise.md)<br>[内容/媒体/营销服务](../industries/content-media.md)|[运营自动化负责人](../roles/operations-automation.md)<br>[开发工程师](../roles/engineering.md)<br>[内容研究助理](../roles/content-research.md)|medium|给采集和站点监测团队用，适合抓公开网页、盯页面变化、给 RAG 准备原料；robots、条款和隐私边界不能越。|
+|[microsoft/markitdown](https://github.com/microsoft/markitdown)|[通用企业/内部运营](../industries/general-enterprise.md)<br>[专业服务：法律/咨询/研究](../industries/professional-services.md)<br>[内容/媒体/营销服务](../industries/content-media.md)|[文档处理专员](../roles/document-ops.md)<br>[知识库运营](../roles/knowledge-ops.md)<br>[法务/合规负责人](../roles/legal-compliance.md)|low|给知识库和文档处理团队用，适合把 PDF、PPT、Word 先转成能喂给 AI 的文本；转换稿不能当原件，敏感文件照样要脱敏。|
+|[apify/crawlee-python](https://github.com/apify/crawlee-python)|[零售/电商/客服密集型](../industries/retail-ecommerce.md)<br>[通用企业/内部运营](../industries/general-enterprise.md)<br>[内容/媒体/营销服务](../industries/content-media.md)|[运营自动化负责人](../roles/operations-automation.md)<br>[开发工程师](../roles/engineering.md)<br>[内容研究助理](../roles/content-research.md)|medium|给 Python 技术栈的采集团队用，适合做公开网页抓取和浏览器执行；碰登录态或受限页面时要先补审计和权限。|
+|[GLips/Figma-Context-MCP](https://github.com/GLips/Figma-Context-MCP)|[软件/互联网/研发组织](../industries/software-internet.md)<br>[专业服务：法律/咨询/研究](../industries/professional-services.md)|[数字员工/Skill 设计师](../roles/digital-employee-designer.md)<br>[产品经理](../roles/product-manager.md)<br>[开发工程师](../roles/engineering.md)|medium|给产品、设计系统和前端协作团队用，适合把设计稿上下文接到编码流程里；私有设计资产和 token 不能默认外放。|
+|[microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp)|[软件/互联网/研发组织](../industries/software-internet.md)<br>[零售/电商/客服密集型](../industries/retail-ecommerce.md)<br>[内容/媒体/营销服务](../industries/content-media.md)|[QA/测试负责人](../roles/qa-testing.md)<br>[运营自动化负责人](../roles/operations-automation.md)<br>[开发工程师](../roles/engineering.md)|medium|给 QA 和网页运营自动化团队用，适合真实打开页面做回归和流程检查；凡是会点到真系统的动作都要隔离账号、保留审批。|
+|[nanobrowser/nanobrowser](https://github.com/nanobrowser/nanobrowser)|[通用企业/内部运营](../industries/general-enterprise.md)<br>[零售/电商/客服密集型](../industries/retail-ecommerce.md)<br>[内容/媒体/营销服务](../industries/content-media.md)|[运营自动化负责人](../roles/operations-automation.md)<br>[开发工程师](../roles/engineering.md)<br>[内容/市场运营负责人](../roles/content-marketing.md)|medium|给一线运营和增长试点团队用，适合验证浏览器扩展形态的 AI 自动化；它依然会碰账号、页面和 API key，别当低风险玩具。|
+|[langchain-ai/open_deep_research](https://github.com/langchain-ai/open_deep_research)|[通用企业/内部运营](../industries/general-enterprise.md)<br>[内容/媒体/营销服务](../industries/content-media.md)<br>[咨询/培训/知识服务](../industries/consulting-training.md)<br>[专业服务：法律/咨询/研究](../industries/professional-services.md)|[策略/行业研究员](../roles/strategy-research.md)<br>[内容研究助理](../roles/content-research.md)<br>[内容/市场运营负责人](../roles/content-marketing.md)|medium|给研究员和内容团队用，适合先把资料、出处、分歧拉出来；核查没做完前别直接变成可发结论。|
+|[alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills)|[通用企业/内部运营](../industries/general-enterprise.md)<br>[内容/媒体/营销服务](../industries/content-media.md)<br>[咨询/培训/知识服务](../industries/consulting-training.md)|[知识库运营](../roles/knowledge-ops.md)<br>[数字员工/Skill 设计师](../roles/digital-employee-designer.md)<br>[工作流架构师](../roles/workflow-architecture.md)|medium|给搭内部 skill 库的人用，适合研究 skill 怎么分层和分发；不要整仓照搬，不然上下文和维护成本一起失控。|
+|[JimLiu/baoyu-skills](https://github.com/JimLiu/baoyu-skills)|[内容/媒体/营销服务](../industries/content-media.md)<br>[咨询/培训/知识服务](../industries/consulting-training.md)|[内容/市场运营负责人](../roles/content-marketing.md)<br>[Skill 观察研究员](../roles/skill-research.md)<br>[数字员工/Skill 设计师](../roles/digital-employee-designer.md)|high|给内容型 skill 设计观察用，适合研究 packaging 写法；许可没讲清前不要进企业库，也别对外分发。|
 
-- 适合岗位：行业研究员 / 内容研究助理 / 策略分析师
-- 推荐语：需要先把资料捞全、把出处和分歧摆出来时，它很有用。别让它跳过核查直接变成可发观点。
-- 适合谁：行业研究、竞品研究、内容资料初稿；给研究型数字员工提供基线 workflow
-- 不适合谁：把自动检索结果直接当最终事实；没有引用核查就进入对外发布
-- 边界提醒：研究链路可能继承网页噪音与错误引用，需要事实核验；更适合作为研究初稿引擎，不是最终审校者
+## 推荐工作流
+- 先做资料收集和事实核查，再进入写作、视觉和发布。
+- 图文内容要先去 AI 味，再进入出图/排版流程。
+- 涉及外部发布、版权、授权和账号权限时，必须保留人工审核。
 
-### microsoft/markitdown（markitdown）
-
-- 适合岗位：知识库运营 / 文档处理专员 / 研究助理
-- 推荐语：企业里一堆 PDF、PPT、Word 进不了 AI 流程时，它能先把格式摊平。别把转换后的 Markdown 当原件。
-- 适合谁：知识库入库前的文档清洗；把 Office/PDF 内容接进研究或写作链路
-- 不适合谁：把转换结果当成无损原件；含敏感文件却没有脱敏/隔离策略
-- 边界提醒：处理的是原始文件，若包含敏感信息仍需脱敏和访问控制；格式转换会有信息损失或结构偏差，需要人工抽检
-
-### microsoft/playwright-mcp（playwright-mcp）
-
-- 适合岗位：QA 负责人 / 运营自动化负责人 / 前端测试工程师
-- 推荐语：凡是需要“真的打开网页点一遍”的场景，它比纯文本 agent 靠谱。但它点的是真系统，所以账号隔离和审批不能省。
-- 适合谁：网页回归测试与可视化 QA；需要浏览器执行能力的数字员工
-- 不适合谁：登录高敏系统却没有隔离账号；把浏览器自动化当成无风险点击器
-- 边界提醒：浏览器会接触会话、Cookie、后台页面，必须隔离凭证与账号；自动点击可能触发真实外部动作，需要审批边界
-
-### alirezarezvani/claude-skills（claude-skills）
-
-- 适合岗位：知识库运营 / 数字员工设计师 / 流程模板维护者
-- 推荐语：适合拿来研究企业内部 skill 库怎么分层、怎么裁剪。别整仓搬进来，不然上下文很快失控。
-- 适合谁：搭建企业内部 skill library；给不同代理角色分发可复用技能包
-- 不适合谁：整仓全装导致上下文膨胀；不做筛选就把社区 skill 当企业 SOP
-- 边界提醒：社区 skill 质量参差，需要二次验证和删改；一次性装太多 skill 会明显增加上下文负担
-
-### JimLiu/baoyu-skills（baoyu-skills）
-
-- 适合岗位：内容运营负责人 / skill 观察研究员 / 数字员工方案设计
-- 推荐语：这个仓库更适合当观察样本，不适合直接拿去商用复用。现在最大的卡点不是能力，而是许可边界没讲清。
-- 适合谁：先做观察样本，研究 skill packaging 方式
-- 不适合谁：直接复制到企业库并对外分发；把未声明许可的仓库当成默认可商用素材
-- 边界提醒：GitHub API license endpoint 返回 404，仓库根目录未发现 LICENSE，复用与再发布边界不清楚；即使 README 提供安装方式，也不等于获得明确再分发权利
-- 状态：BLOCKED，当前最大问题是 license/授权边界未明确。
-
-## 可组合数字员工
-
-- trend-scout：抓选题和外部信号
-- narrative-strategist：定角度、去 AI 味、守住作者姿态
-- research-writer：做长文资料整理和初稿
-- visual-agent：负责封面、长图、图文设计
-- publisher-analytics-agent：负责发布、归档、数据复盘
-
-## 当前规则
-
-图文内容在生成视觉前，也要先做文案去 AI 味。未通过 narrative-strategist 审核的图中文字，不进入出图环节。
+## 风险边界
+- 内容发布前必须有人审，尤其是事实、版权和品牌语气。
+- 采集和浏览器自动化会接触账号和页面，会话隔离不能省。
+- 公开传播前要先过许可与授权边界。

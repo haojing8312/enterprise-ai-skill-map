@@ -15,7 +15,7 @@
 - [研发平台/GitHub 管理员](../roles/engineering-platform.md)：1 个 Skill
 - [运营/行政/流程管理员](../roles/operations-admin.md)：1 个 Skill
 
-## 当前可用 Skill
+## 精选 Skill
 
 |Skill|岗位|场景|风险|一句话用法|
 |---|---|---|---|---|

@@ -8,7 +8,7 @@
 - [AI/数据基础设施团队](../industries/ai-infrastructure.md)：1 个 Skill
 - [通用企业/内部运营](../industries/general-enterprise.md)：1 个 Skill
 
-## 当前可用 Skill
+## 精选 Skill
 
 |Skill|行业|场景|风险|一句话用法|
 |---|---|---|---|---|

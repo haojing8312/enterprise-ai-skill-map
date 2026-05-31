@@ -17,7 +17,7 @@
 - [AI 应用工程师](../roles/ai-application.md)：1 个 Skill
 - [运营自动化负责人](../roles/operations-automation.md)：1 个 Skill
 
-## 当前可用 Skill
+## 精选 Skill
 
 |Skill|岗位|场景|风险|一句话用法|
 |---|---|---|---|---|

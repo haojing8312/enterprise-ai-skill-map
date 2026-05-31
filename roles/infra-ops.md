@@ -8,7 +8,7 @@
 - [软件/互联网/研发组织](../industries/software-internet.md)：3 个 Skill
 - [政企/国企/内网场景](../industries/government-stateowned.md)：1 个 Skill
 
-## 当前可用 Skill
+## 精选 Skill
 
 |Skill|行业|场景|风险|一句话用法|
 |---|---|---|---|---|

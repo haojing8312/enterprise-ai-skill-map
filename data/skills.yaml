@@ -27,6 +27,7 @@ skills:
   - 研发效能负责人
   - AI 编码流程设计者
   value_summary: 如果团队已经在用 AI 写码，但总要靠人最后收烂摊子，可以先看它怎么把 spec、测试、验收往前放。它更像流程样本，不是万能外挂。
+  copy: 给技术负责人和 AI 编码流程设计者用，适合把 spec、测试、验收提前到写码前面；前提是团队本来就愿意做评审和回滚。
   best_for:
   - 研发团队建立 AI 编码工作流
   - 数字员工任务分解与验收
@@ -46,6 +47,8 @@ skills:
     communication: 8
     total: 65
   review_notes: 可做样本，但不应神化。
+  source_url: https://github.com/obra/superpowers
+  verification_status: verified_public
 - id: codex
   name: openai/codex
   url: https://github.com/openai/codex
@@ -73,6 +76,7 @@ skills:
   - 代码审阅者
   - 研发效能负责人
   value_summary: 适合给会看代码的人提速：读仓库、修小 bug、跑命令都顺手，但前提是有人审、有人测。
+  copy: 给会看代码的开发和测试负责人用，适合读仓库、修小 bug、补测试；别拿它跳过评审直接动生产。
   best_for:
   - 研发团队做 bugfix、代码审阅、仓库导航
   - 把 AI 编码能力纳入有人审的交付链路
@@ -94,6 +98,8 @@ skills:
     communication: 9
     total: 93
   review_notes: 适合做企业 AI 编码助手样本，但必须放在 review/test 之后，而不是替代 review/test。
+  source_url: https://github.com/openai/codex
+  verification_status: verified_public
 - id: opencode
   name: anomalyco/opencode
   url: https://github.com/anomalyco/opencode
@@ -122,6 +128,7 @@ skills:
   - 研发效能负责人
   - 开源工具负责人
   value_summary: 想自己掌控 AI 编码流程，而不是全押某个闭源产品，可以拿它做开源底座。别把“能改代码”理解成“能自己交付”。
+  copy: 给想自建开源 AI 编码底座的研发团队用，适合做可二次开发的 coding agent 流程；没有沙箱和权限控制时别往生产环境放。
   best_for:
   - 想搭建可二次开发的 AI 编码流程
   - 研究开源 coding agent 的企业接入方式
@@ -143,6 +150,8 @@ skills:
     communication: 9
     total: 92
   review_notes: 很适合放进“企业为何需要权限边界和验收机制”这一类案例。
+  source_url: https://github.com/anomalyco/opencode
+  verification_status: verified_public
 - id: llama-cpp
   name: ggml-org/llama.cpp
   url: https://github.com/ggml-org/llama.cpp
@@ -171,6 +180,7 @@ skills:
   - 内网工具负责人
   - 边缘部署工程师
   value_summary: 如果场景出不了网，或者想先把模型跑在自己机器上，它是个靠谱底座。但它解决的是推理，不是业务流程。
+  copy: 给内网或成本敏感的 AI 平台团队用，适合先把模型跑在自己机器上验证可行性；它解决推理，不替你解决业务流程和模型许可。
   best_for:
   - 内网环境或成本敏感场景做本地模型验证
   - 把模型推理能力嵌入私有工具链
@@ -192,6 +202,8 @@ skills:
     communication: 9
     total: 89
   review_notes: 适合归入“基础设施型 Skill/能力底座”，不是即插即用的业务员工。
+  source_url: https://github.com/ggml-org/llama.cpp
+  verification_status: verified_public
 - id: vllm
   name: vllm-project/vllm
   url: https://github.com/vllm-project/vllm
@@ -220,6 +232,7 @@ skills:
   - 推理服务负责人
   - GPU 资源运营
   value_summary: 当团队开始同时接多模型、看吞吐和成本时，再考虑它更合适。别把它当成一键省心的 SaaS。
+  copy: 给多模型和高吞吐场景的 AI 平台、运维团队用，适合统一推理服务和看 GPU 利用率；没有运维能力时别把它当一键托管平台。
   best_for:
   - 多模型统一服务层
   - GPU 资源利用率和吞吐要求高的团队
@@ -241,6 +254,8 @@ skills:
     communication: 9
     total: 90
   review_notes: 可作为“企业自建模型服务层”代表条目。
+  source_url: https://github.com/vllm-project/vllm
+  verification_status: verified_public
 - id: mcp-servers
   name: modelcontextprotocol/servers
   url: https://github.com/modelcontextprotocol/servers
@@ -271,6 +286,7 @@ skills:
   - 系统集成负责人
   - 数字员工架构师
   value_summary: 它的价值不是“更聪明”，而是把文件、浏览器、GitHub 这些工具接进来，让数字员工真的能干活。前提是权限要一项一项收紧。
+  copy: 给数字员工架构师和 AI 平台团队用，适合梳理文件、浏览器、GitHub 这类工具接入；每接一个 server 都要单独收权限。
   best_for:
   - 梳理企业工具接入清单
   - 为数字员工补浏览器、文件、GitHub 等外部工具接口
@@ -292,6 +308,8 @@ skills:
     communication: 9
     total: 88
   review_notes: 适合作为协议/连接器目录收录，但不要把每个 server 的风险一概而论。
+  source_url: https://github.com/modelcontextprotocol/servers
+  verification_status: verified_public
 - id: github-mcp-server
   name: github/github-mcp-server
   url: https://github.com/github/github-mcp-server
@@ -319,6 +337,7 @@ skills:
   - GitHub 管理员
   - 工程协作自动化负责人
   value_summary: 如果团队已经把 issue、PR、review 都放在 GitHub，这个 server 很适合接给开发型数字员工。先管好 token，再谈自动化。
+  copy: 给 GitHub 为核心的研发平台团队用，适合把 issue、PR、review 接进数字员工流程；token scope 和写权限不清时先别自动化。
   best_for:
   - 研发协作自动化
   - 代码库与工单系统一体化
@@ -340,6 +359,8 @@ skills:
     communication: 9
     total: 84
   review_notes: 企业价值清晰，但前提是 token 权限和审计链路设置到位。
+  source_url: https://github.com/github/github-mcp-server
+  verification_status: verified_public
 - id: playwright-mcp
   name: microsoft/playwright-mcp
   url: https://github.com/microsoft/playwright-mcp
@@ -370,6 +391,7 @@ skills:
   - 运营自动化负责人
   - 前端测试工程师
   value_summary: 凡是需要“真的打开网页点一遍”的场景，它比纯文本 agent 靠谱。但它点的是真系统，所以账号隔离和审批不能省。
+  copy: 给 QA 和网页运营自动化团队用，适合真实打开页面做回归和流程检查；凡是会点到真系统的动作都要隔离账号、保留审批。
   best_for:
   - 网页回归测试与可视化 QA
   - 需要浏览器执行能力的数字员工
@@ -391,6 +413,8 @@ skills:
     communication: 9
     total: 84
   review_notes: 非常适合做 QA/运营代理，但必须单独写账号与审批规范。
+  source_url: https://github.com/microsoft/playwright-mcp
+  verification_status: verified_public
 - id: claude-skills
   name: alirezarezvani/claude-skills
   url: https://github.com/alirezarezvani/claude-skills
@@ -421,6 +445,7 @@ skills:
   - 数字员工设计师
   - 流程模板维护者
   value_summary: 适合拿来研究企业内部 skill 库怎么分层、怎么裁剪。别整仓搬进来，不然上下文很快失控。
+  copy: 给搭内部 skill 库的人用，适合研究 skill 怎么分层和分发；不要整仓照搬，不然上下文和维护成本一起失控。
   best_for:
   - 搭建企业内部 skill library
   - 给不同代理角色分发可复用技能包
@@ -442,6 +467,8 @@ skills:
     communication: 9
     total: 80
   review_notes: 适合当目录设计样本，不适合未经裁剪就整包进企业环境。
+  source_url: https://github.com/alirezarezvani/claude-skills
+  verification_status: verified_public
 - id: baoyu-skills
   name: JimLiu/baoyu-skills
   url: https://github.com/JimLiu/baoyu-skills
@@ -469,6 +496,7 @@ skills:
   - skill 观察研究员
   - 数字员工方案设计
   value_summary: 这个仓库更适合当观察样本，不适合直接拿去商用复用。现在最大的卡点不是能力，而是许可边界没讲清。
+  copy: 给内容型 skill 设计观察用，适合研究 packaging 写法；许可没讲清前不要进企业库，也别对外分发。
   best_for:
   - 先做观察样本，研究 skill packaging 方式
   not_for:
@@ -489,6 +517,8 @@ skills:
     communication: 9
     total: 69
   review_notes: 按当前标准应 BLOCK，待补充明确 license 或授权说明后再转 verified。
+  source_url: https://github.com/JimLiu/baoyu-skills
+  verification_status: blocked
 - id: open-deep-research
   name: langchain-ai/open_deep_research
   url: https://github.com/langchain-ai/open_deep_research
@@ -519,6 +549,7 @@ skills:
   - 内容研究助理
   - 策略分析师
   value_summary: 需要先把资料捞全、把出处和分歧摆出来时，它很有用。别让它跳过核查直接变成可发观点。
+  copy: 给研究员和内容团队用，适合先把资料、出处、分歧拉出来；核查没做完前别直接变成可发结论。
   best_for:
   - 行业研究、竞品研究、内容资料初稿
   - 给研究型数字员工提供基线 workflow
@@ -540,6 +571,8 @@ skills:
     communication: 9
     total: 82
   review_notes: 非常适合内容/研究场景，但要搭配事实核验与人审。
+  source_url: https://github.com/langchain-ai/open_deep_research
+  verification_status: verified_public
 - id: openai-agents-python
   name: openai/openai-agents-python
   url: https://github.com/openai/openai-agents-python
@@ -569,6 +602,7 @@ skills:
   - 工作流架构师
   - 多代理编排负责人
   value_summary: 适合自己搭一套有人设、有交接、有工具调用的数字员工原型。它是 SDK，不是现成业务系统。
+  copy: 给要自己编排多角色代理的产品和工程团队用，适合做 handoff 和工具调用原型；它是 SDK，不是现成业务系统。
   best_for:
   - 需要程序化编排 agent handoff 的团队
   - 把多个角色代理组织成可测试流程
@@ -590,6 +624,8 @@ skills:
     communication: 9
     total: 83
   review_notes: 适合做“多代理编排层”条目，不应夸大为开箱即用的企业员工系统。
+  source_url: https://github.com/openai/openai-agents-python
+  verification_status: verified_public
 - id: markitdown
   name: microsoft/markitdown
   url: https://github.com/microsoft/markitdown
@@ -620,6 +656,7 @@ skills:
   - 文档处理专员
   - 研究助理
   value_summary: 企业里一堆 PDF、PPT、Word 进不了 AI 流程时，它能先把格式摊平。别把转换后的 Markdown 当原件。
+  copy: 给知识库和文档处理团队用，适合把 PDF、PPT、Word 先转成能喂给 AI 的文本；转换稿不能当原件，敏感文件照样要脱敏。
   best_for:
   - 知识库入库前的文档清洗
   - 把 Office/PDF 内容接进研究或写作链路
@@ -641,6 +678,8 @@ skills:
     communication: 9
     total: 87
   review_notes: 非常适合作为企业知识入库前置模块，但要提醒“转换≠审计/脱敏”。
+  source_url: https://github.com/microsoft/markitdown
+  verification_status: verified_public
 - id: litellm
   name: BerriAI/litellm
   url: https://github.com/BerriAI/litellm
@@ -670,6 +709,7 @@ skills:
   - 模型网关负责人
   - 成本治理负责人
   value_summary: 当你手里不止一家模型供应商，还想统一路由、记日志、控预算时，它很实用。问题是密钥会更集中，所以平台权限要更严。
+  copy: 给多模型接入的 AI 平台团队用，适合统一路由、日志和预算；密钥会更集中，所以权限和审计要更严。
   best_for:
   - 多模型供应商接入统一出口
   - 需要做路由、日志、预算和策略控制的团队
@@ -691,6 +731,8 @@ skills:
     communication: 9
     total: 85
   review_notes: 可收录，但要把“集中密钥与日志”的平台风险单独讲清楚。
+  source_url: https://github.com/BerriAI/litellm
+  verification_status: verified_public
 - id: mem0
   name: mem0ai/mem0
   url: https://github.com/mem0ai/mem0
@@ -720,6 +762,7 @@ skills:
   - 内部助手产品经理
   - 用户记忆/个性化负责人
   value_summary: 如果你的助手老是前后失忆，或者客服每轮都像第一次接触用户，可以研究它。但记得先把保留期、删除和纠错机制想清楚。
+  copy: 给客服、助理和产品团队用，适合让助手记住上下文和用户偏好；没定保留期、删除和纠错机制前别随便存用户记忆。
   best_for:
   - 客服/助理型代理的上下文保持
   - 需要多轮连续性和偏好记忆的内部助手
@@ -741,3 +784,998 @@ skills:
     communication: 9
     total: 82
   review_notes: 很适合作为“记忆层”条目，但合规风险要比普通 prompt/skill 更高。
+  source_url: https://github.com/mem0ai/mem0
+  verification_status: verified_public
+- id: harness
+  name: revfactory/harness
+  url: https://github.com/revfactory/harness
+  source_url: https://github.com/revfactory/harness
+  license: Apache-2.0
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  verification_status: verified_public
+  industries:
+  - software-internet
+  - consulting-training
+  scenarios:
+  - r-and-d
+  - office
+  role_groups:
+  - engineering-management
+  - workflow-architecture
+  - skill-research
+  capabilities:
+  - multi-agent-workflow
+  - role-packaging
+  - workflow-templates
+  - planning
+  roles:
+  - AI 工作流设计者
+  - 研发效能负责人
+  - 企业培训顾问
+  value_summary: 适合拿来研究“怎么把一个岗位拆成 agent 团队 + skill 包”。更像方法样本，不是接上就能自治的员工。
+  copy: 给咨询交付和数字员工设计团队用，适合把一个岗位拆成 agent 团队加 skill 包；它更像方法样本，不是接上就能上岗的员工。
+  best_for:
+  - 设计企业内部专岗 agent 团队
+  - 把 skill 模板沉淀成培训/咨询交付件
+  not_for:
+  - 想跳过流程设计直接一键上生产
+  - 把技能模板当成最终业务 SOP
+  risk_level: low
+  risks:
+  - 容易被误包装成“自动生成团队就能落地”，实际仍需人工定义边界和验收
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 4,391 stars，README 含 Installation。
+  score:
+    ranking_growth: 22
+    usefulness: 27
+    reproducibility: 14
+    safety: 13
+    communication: 8
+    total: 84
+  review_notes: 适合放进“企业如何设计岗位型 agent 团队”样本库。
+- id: browser-use
+  name: browser-use/browser-use
+  url: https://github.com/browser-use/browser-use
+  source_url: https://github.com/browser-use/browser-use
+  license: MIT
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  verification_status: verified_public
+  industries:
+  - software-internet
+  - retail-ecommerce
+  - general-enterprise
+  scenarios:
+  - operations-admin
+  - marketing-content
+  - customer-service
+  role_groups:
+  - operations-automation
+  - engineering
+  - qa-testing
+  capabilities:
+  - browser-automation
+  - web-retrieval
+  - tool-calling
+  - web-testing
+  roles:
+  - 自动化运营
+  - 测试工程师
+  - 网页流程设计者
+  value_summary: 适合把网页采集、登录后操作、表单流转做成企业数字员工流程，但必须先控好账号、数据和审计边界。
+  copy: 给网页流程自动化团队用，适合做采集、登录后操作和表单流转；生产账号、Cookie 和页面数据必须单独隔离。
+  best_for:
+  - 网页采集与表单操作自动化
+  - 需要浏览器级执行的测试/运营流程
+  not_for:
+  - 直接拿生产账号做无人值守高权限操作
+  - 绕过网站规则或隐私边界
+  risk_level: medium
+  risks:
+  - 涉及登录态、Cookie、页面数据时必须配审计与最小权限
+  - 浏览器自动化容易被误用成“代替人类审核”
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，MIT；2026-05-31 GitHub API 显示 96,367 stars，README 含 LLM Quickstart。
+  score:
+    ranking_growth: 30
+    usefulness: 29
+    reproducibility: 15
+    safety: 10
+    communication: 9
+    total: 93
+  review_notes: 企业可用价值高，但必须跟权限与合规设计一起收录。
+- id: gemini-cli
+  name: google-gemini/gemini-cli
+  url: https://github.com/google-gemini/gemini-cli
+  source_url: https://github.com/google-gemini/gemini-cli
+  license: Apache-2.0
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  verification_status: verified_public
+  industries:
+  - software-internet
+  - general-enterprise
+  scenarios:
+  - r-and-d
+  - office
+  role_groups:
+  - engineering
+  - engineering-management
+  - knowledge-ops
+  capabilities:
+  - terminal-execution
+  - repo-context
+  - tool-calling
+  - planning
+  roles:
+  - 开发工程师
+  - 知识工具负责人
+  - AI 办公助手设计者
+  value_summary: 适合观察“大厂 CLI agent 如何落到终端工作流”。能提速，但不应被当成默认可信的生产执行者。
+  copy: 给想比较不同 CLI agent 的研发和知识工作团队用，适合放进终端工作流试用；终端能执行命令，不等于它有审批权。
+  best_for:
+  - 终端式研发助手与办公助手研究
+  - 对比不同 CLI agent 的接入方式
+  not_for:
+  - 默认接入高权限生产环境
+  - 把终端执行能力误当审批能力
+  risk_level: medium
+  risks:
+  - 终端执行与上下文读取需要权限隔离
+  - 外部模型调用要明确数据出境与留存边界
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 104,774 stars，README 含 Installation。
+  score:
+    ranking_growth: 30
+    usefulness: 28
+    reproducibility: 15
+    safety: 10
+    communication: 9
+    total: 92
+  review_notes: 适合做“企业接入终端式 AI 助手时要控哪些边界”的样本。
+- id: mattpocock-skills
+  name: mattpocock/skills
+  url: https://github.com/mattpocock/skills
+  source_url: https://github.com/mattpocock/skills
+  license: MIT
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  verification_status: verified_public
+  industries:
+  - software-internet
+  - consulting-training
+  scenarios:
+  - r-and-d
+  role_groups:
+  - engineering
+  - qa-testing
+  - workflow-architecture
+  capabilities:
+  - skill-library
+  - testing
+  - debugging
+  - code-review
+  roles:
+  - 开发工程师
+  - 测试工程师
+  - 研发流程设计者
+  value_summary: 是高传播度的 skills 样本库，适合拆解“一个工程团队会愿意复用什么 skill、怎么落到 setup 流程里”。
+  copy: 给工程团队搭 skills 模板库用，适合看什么 skill 真会被开发者反复调用；公开样本要先裁剪，再变成企业标准。
+  best_for:
+  - 整理工程类 skill 模板
+  - 研究 skills 安装与激活流程
+  not_for:
+  - 不做筛选直接整包塞进企业上下文
+  - 把公开 skill 当成企业标准流程原样照抄
+  risk_level: low
+  risks:
+  - 公开 skill 模板质量不一，需要二次裁剪和本地化审校
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，MIT；2026-05-31 GitHub API 显示 112,648 stars，README 含 Quickstart。
+  score:
+    ranking_growth: 30
+    usefulness: 27
+    reproducibility: 15
+    safety: 13
+    communication: 9
+    total: 94
+  review_notes: 适合作为“高传播公开 skill 库”的标杆条目。
+- id: scientific-agent-skills
+  name: K-Dense-AI/scientific-agent-skills
+  url: https://github.com/K-Dense-AI/scientific-agent-skills
+  source_url: https://github.com/K-Dense-AI/scientific-agent-skills
+  license: MIT
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  verification_status: verified_public
+  industries:
+  - professional-services
+  - consulting-training
+  - software-internet
+  scenarios:
+  - r-and-d
+  - office
+  role_groups:
+  - strategy-research
+  - skill-research
+  - knowledge-ops
+  capabilities:
+  - skill-library
+  - deep-research
+  - source-synthesis
+  - knowledge-prep
+  roles:
+  - 科研助理
+  - 行业研究员
+  - 知识库策展人
+  value_summary: 适合观察“垂直领域技能库如何围绕科学研究组织能力与数据源”。对企业咨询/培训也有借鉴价值。
+  copy: 给做垂直知识库或培训方案的人用，适合研究专业领域 skill 怎么围绕数据源组织；专业结论仍要让行业专家复核。
+  best_for:
+  - 垂直领域 skill 库样本研究
+  - 方法论课程里展示行业化 skill 打包方式
+  not_for:
+  - 直接把科研结论视为企业通用答案
+  - 忽略专业验证就对外承诺结果
+  risk_level: medium
+  risks:
+  - 专业领域技能需要行业专家复核，不能只靠 README 宣传口径
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，MIT；2026-05-31 GitHub API 显示 26,687 stars，README 含 Getting Started。
+  score:
+    ranking_growth: 27
+    usefulness: 24
+    reproducibility: 14
+    safety: 11
+    communication: 8
+    total: 84
+  review_notes: 适合保留为“垂直研究型 skill 库”代表，不应被泛化成万能企业模板。
+- id: spring-ai-agent-utils
+  name: spring-ai-community/spring-ai-agent-utils
+  url: https://github.com/spring-ai-community/spring-ai-agent-utils
+  source_url: https://github.com/spring-ai-community/spring-ai-agent-utils
+  license: Apache-2.0
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  verification_status: verified_public
+  industries:
+  - software-internet
+  - ai-infrastructure
+  - professional-services
+  scenarios:
+  - r-and-d
+  - operations-admin
+  role_groups:
+  - engineering
+  - engineering-platform
+  - workflow-architecture
+  capabilities:
+  - agent-tooling
+  - tool-integration
+  - workflow-sdk
+  - handoffs
+  roles:
+  - Java 平台工程师
+  - Spring AI 集成工程师
+  - 企业应用架构师
+  value_summary: 适合 Java / Spring 体系团队参考怎么把 skill、tool、handoff 封装进企业应用。
+  copy: 给 Java、Spring 团队用，适合把 skill、tool、handoff 封装进企业应用；没有安全评审前别把工具接口直接暴露出去。
+  best_for:
+  - Spring 生态做 agent 工具层接入
+  - 企业内部 Java 系统接 AI 能力
+  not_for:
+  - 没有 Java/Spring 基础却想低成本快速落地
+  - 跳过安全评审直接暴露工具接口
+  risk_level: medium
+  risks:
+  - 企业应用集成一旦连到内部系统，必须先划清工具访问权限和日志策略
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 465 stars，README 含 Quick Start。
+  score:
+    ranking_growth: 18
+    usefulness: 25
+    reproducibility: 14
+    safety: 11
+    communication: 8
+    total: 76
+  review_notes: 更适合 B 端研发团队，不适合被误判成通用办公助手方案。
+- id: awesome-mcp-servers
+  name: punkpeye/awesome-mcp-servers
+  url: https://github.com/punkpeye/awesome-mcp-servers
+  source_url: https://github.com/punkpeye/awesome-mcp-servers
+  license: MIT
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  verification_status: verified_public
+  industries:
+  - general-enterprise
+  - ai-infrastructure
+  - software-internet
+  scenarios:
+  - r-and-d
+  - operations-admin
+  - office
+  role_groups:
+  - ai-platform
+  - workflow-architecture
+  - skill-research
+  capabilities:
+  - protocol-reference
+  - system-connectors
+  - tool-integration
+  - skill-library
+  roles:
+  - MCP 生态研究员
+  - 平台架构师
+  - 数字员工连接层设计者
+  value_summary: 适合作为 MCP 生态总目录，用来快速找连接器样本和常见系统接入方向。它是目录，不是企业级背书清单。
+  copy: 给做选型长名单的人用，适合快速摸清 MCP 生态里有哪些连接器；它是目录，不是生产可用清单。
+  best_for:
+  - 搭建 MCP 选型长名单
+  - 培训中展示连接层生态全貌
+  not_for:
+  - 把目录里项目默认视为可直接生产可用
+  - 跳过单项安全与 license 复核
+  risk_level: medium
+  risks:
+  - 收录项目质量参差不齐，必须逐项复核权限边界、维护状态和许可证
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，MIT；2026-05-31 GitHub API 显示 88,223 stars，README 为 MCP server collection。
+  score:
+    ranking_growth: 29
+    usefulness: 27
+    reproducibility: 14
+    safety: 10
+    communication: 9
+    total: 89
+  review_notes: 适合做索引，不适合直接等同于“已验证条目库”。
+- id: fastmcp
+  name: PrefectHQ/fastmcp
+  url: https://github.com/PrefectHQ/fastmcp
+  source_url: https://github.com/PrefectHQ/fastmcp
+  license: Apache-2.0
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  verification_status: verified_public
+  industries:
+  - software-internet
+  - ai-infrastructure
+  - professional-services
+  scenarios:
+  - r-and-d
+  - operations-admin
+  role_groups:
+  - engineering
+  - ai-platform
+  - workflow-architecture
+  capabilities:
+  - tool-integration
+  - workflow-sdk
+  - protocol-reference
+  - tool-calling
+  roles:
+  - Python 工程师
+  - MCP 平台工程师
+  - AI 工具链设计者
+  value_summary: 适合 Python 团队搭 MCP server/client 的工程底座，能让连接层从 demo 走向可维护工程。
+  copy: 给 Python 团队用，适合把 MCP server、client 从 demo 做成可维护工程；工具层能连内网资源时，权限设计要先行。
+  best_for:
+  - 企业内部快速搭 MCP server/client
+  - 把工具封装成可维护 Python 服务
+  not_for:
+  - 只有 prompt 没有工程治理就想长期维护
+  - 把 MCP 工具层直接暴露高权限内网资源
+  risk_level: medium
+  risks:
+  - 工具服务一旦连到内部系统，必须补齐认证、审计和最小权限设计
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 25,410 stars，README 强调 build MCP servers and clients。
+  score:
+    ranking_growth: 28
+    usefulness: 28
+    reproducibility: 15
+    safety: 10
+    communication: 9
+    total: 90
+  review_notes: 首批应保留，适合做企业内部 MCP 工程样本。
+- id: mcp-toolbox
+  name: googleapis/mcp-toolbox
+  url: https://github.com/googleapis/mcp-toolbox
+  source_url: https://github.com/googleapis/mcp-toolbox
+  license: Apache-2.0
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  verification_status: verified_public
+  industries:
+  - general-enterprise
+  - ai-infrastructure
+  - software-internet
+  scenarios:
+  - operations-admin
+  - office
+  - r-and-d
+  role_groups:
+  - ai-platform
+  - operations-admin
+  - workflow-architecture
+  capabilities:
+  - system-connectors
+  - tool-integration
+  - protocol-reference
+  - tool-calling
+  roles:
+  - 数据库平台工程师
+  - 内部助手接入负责人
+  - 数据产品工程师
+  value_summary: 适合把数据库能力通过 MCP 提供给 IDE/agent，但也意味着要先想清楚谁能查什么、能不能改写。
+  copy: 给要把数据库接进 AI 助手的开发和分析团队用，适合做查询、发现和 schema 理解；谁能查、谁能写，必须先分层。
+  best_for:
+  - 数据库接 AI 助手的查询/发现流程
+  - 面向开发与分析团队的 MCP 数据访问层
+  not_for:
+  - 没有数据权限分层就开放数据库工具
+  - 把自然语言查库误认为合规已解决
+  risk_level: medium
+  risks:
+  - 数据库连接器涉及敏感数据和写权限，必须先做权限、审计和脱敏策略
+  evidence:
+  - type: github
+    note: '公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 15,397 stars，README 含 Quick Start: Prebuilt Tools。'
+  score:
+    ranking_growth: 26
+    usefulness: 29
+    reproducibility: 14
+    safety: 9
+    communication: 8
+    total: 86
+  review_notes: 企业价值高，但默认应放在“需权限评审”的中风险条目。
+- id: figma-context-mcp
+  name: GLips/Figma-Context-MCP
+  url: https://github.com/GLips/Figma-Context-MCP
+  source_url: https://github.com/GLips/Figma-Context-MCP
+  license: MIT
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  verification_status: verified_public
+  industries:
+  - software-internet
+  - professional-services
+  scenarios:
+  - r-and-d
+  - marketing-content
+  role_groups:
+  - digital-employee-designer
+  - product-manager
+  - engineering
+  capabilities:
+  - system-connectors
+  - tool-integration
+  - tool-calling
+  - repo-context
+  roles:
+  - 设计转代码协作者
+  - 前端工程师
+  - 产品设计系统负责人
+  value_summary: 适合设计稿到代码协作链路，但前提是 Figma token、设计资产权限和输出范围要先控住。
+  copy: 给产品、设计系统和前端协作团队用，适合把设计稿上下文接到编码流程里；私有设计资产和 token 不能默认外放。
+  best_for:
+  - 设计稿信息接入 AI 编码流程
+  - 设计系统到前端协作演示
+  not_for:
+  - 把私有设计稿默认暴露给外部模型
+  - 跳过设计审校直接批量生成页面
+  risk_level: medium
+  risks:
+  - 依赖 Figma access token，设计资产和客户界面稿可能包含未公开信息
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，MIT；2026-05-31 GitHub API 显示 14,925 stars，README 提示需创建 Figma access token。
+  score:
+    ranking_growth: 26
+    usefulness: 25
+    reproducibility: 14
+    safety: 10
+    communication: 9
+    total: 84
+  review_notes: 适合前端/设计协作场景，不适合默认进高敏设计项目。
+- id: casdoor
+  name: casdoor/casdoor
+  url: https://github.com/casdoor/casdoor
+  source_url: https://github.com/casdoor/casdoor
+  license: Apache-2.0
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  verification_status: verified_public
+  industries:
+  - general-enterprise
+  - ai-infrastructure
+  - government-stateowned
+  scenarios:
+  - operations-admin
+  - office
+  - customer-service
+  role_groups:
+  - ai-platform
+  - legal-compliance
+  - infra-ops
+  capabilities:
+  - system-connectors
+  - guardrails
+  - llm-gateway
+  - tool-integration
+  roles:
+  - 身份与访问管理负责人
+  - AI 平台安全负责人
+  - 内部门户工程师
+  value_summary: 适合做“agent-first IAM / gateway”样本，补齐企业数字员工接入后的身份与访问控制视角。
+  copy: 给做统一身份认证的 AI 平台团队用，适合补齐数字员工接入后的 IAM 视角；组织、角色、权限模型没梳清前别急着上。
+  best_for:
+  - AI 平台统一身份认证与访问控制
+  - 需要 OAuth/OIDC/SAML/LDAP 的企业接入场景
+  not_for:
+  - 没有安全团队就贸然自建统一认证底座
+  - 忽略组织与权限建模
+  risk_level: medium
+  risks:
+  - IAM 一旦配置错误，影响面远大于普通工具；必须经过安全评审与分阶段接入
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 13,692 stars，README 含 Quick start。
+  score:
+    ranking_growth: 25
+    usefulness: 28
+    reproducibility: 13
+    safety: 9
+    communication: 8
+    total: 83
+  review_notes: 适合补齐“AI 员工也需要 IAM”这一块，但属于中风险基础设施。
+- id: crawlee
+  name: apify/crawlee
+  url: https://github.com/apify/crawlee
+  source_url: https://github.com/apify/crawlee
+  license: Apache-2.0
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  verification_status: verified_public
+  industries:
+  - retail-ecommerce
+  - general-enterprise
+  - content-media
+  scenarios:
+  - operations-admin
+  - marketing-content
+  - customer-service
+  role_groups:
+  - operations-automation
+  - engineering
+  - content-research
+  capabilities:
+  - browser-automation
+  - web-retrieval
+  - file-ingestion
+  - tool-integration
+  roles:
+  - 采集工程师
+  - 增长运营
+  - 内容研究员
+  value_summary: 适合做网页采集、站点监测、RAG 原始数据获取底座，但不能越过 robots、条款和隐私边界。
+  copy: 给采集和站点监测团队用，适合抓公开网页、盯页面变化、给 RAG 准备原料；robots、条款和隐私边界不能越。
+  best_for:
+  - 网站数据采集与变更监测
+  - RAG/研究流程的网页原料获取
+  not_for:
+  - 抓取隐私数据或受限平台内容
+  - 把爬虫能力包装成合规已解决
+  risk_level: medium
+  risks:
+  - 网页抓取涉及目标站点条款、代理使用和个人信息处理边界
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 23,576 stars，README 含 Installation。
+  score:
+    ranking_growth: 27
+    usefulness: 28
+    reproducibility: 15
+    safety: 10
+    communication: 8
+    total: 88
+  review_notes: 适合作为企业公开网页采集底座样本。
+- id: crawlee-python
+  name: apify/crawlee-python
+  url: https://github.com/apify/crawlee-python
+  source_url: https://github.com/apify/crawlee-python
+  license: Apache-2.0
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  verification_status: verified_public
+  industries:
+  - retail-ecommerce
+  - general-enterprise
+  - content-media
+  scenarios:
+  - operations-admin
+  - marketing-content
+  - r-and-d
+  role_groups:
+  - operations-automation
+  - engineering
+  - content-research
+  capabilities:
+  - browser-automation
+  - web-retrieval
+  - file-ingestion
+  - tool-integration
+  roles:
+  - Python 自动化工程师
+  - 研究工程师
+  - 内容抓取负责人
+  value_summary: 适合 Python 技术栈团队做采集/监测/浏览器自动化，不必为 Node-only 工具链让路。
+  copy: 给 Python 技术栈的采集团队用，适合做公开网页抓取和浏览器执行；碰登录态或受限页面时要先补审计和权限。
+  best_for:
+  - Python 团队做公开网页采集
+  - 研究型/数据型流程接浏览器执行
+  not_for:
+  - 绕开目标网站条款或权限控制
+  - 在无审计情况下处理登录态数据
+  risk_level: medium
+  risks:
+  - 同样涉及网页抓取合规、代理、登录态和数据留存边界
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 9,127 stars，README 含 Installation。
+  score:
+    ranking_growth: 24
+    usefulness: 27
+    reproducibility: 15
+    safety: 10
+    communication: 8
+    total: 84
+  review_notes: 建议与 JS 版 Crawlee 一起收录，覆盖企业常见 Python 团队。
+- id: nanobrowser
+  name: nanobrowser/nanobrowser
+  url: https://github.com/nanobrowser/nanobrowser
+  source_url: https://github.com/nanobrowser/nanobrowser
+  license: Apache-2.0
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  verification_status: verified_public
+  industries:
+  - general-enterprise
+  - retail-ecommerce
+  - content-media
+  scenarios:
+  - operations-admin
+  - marketing-content
+  - office
+  role_groups:
+  - operations-automation
+  - engineering
+  - content-marketing
+  capabilities:
+  - browser-automation
+  - multi-agent-workflow
+  - web-retrieval
+  - tool-calling
+  roles:
+  - 浏览器插件自动化设计者
+  - 增长运营
+  - 前台流程自动化负责人
+  value_summary: 适合展示“浏览器扩展形态的 AI 自动化”怎么进入一线业务，但要强调它仍然吃账号、页面和 API key 边界。
+  copy: 给一线运营和增长试点团队用，适合验证浏览器扩展形态的 AI 自动化；它依然会碰账号、页面和 API key，别当低风险玩具。
+  best_for:
+  - Chrome 扩展形态的网页流程自动化
+  - 对比 browser-use / crawlee 的一线使用体验
+  not_for:
+  - 批量接触高敏账号或客户后台
+  - 把扩展能力视为可无监管扩张的代理人
+  risk_level: medium
+  risks:
+  - 依赖浏览器扩展和自带 API key，存在页面数据暴露和操作误触风险
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 13,060 stars，README 含 Quick Start。
+  score:
+    ranking_growth: 25
+    usefulness: 25
+    reproducibility: 14
+    safety: 10
+    communication: 8
+    total: 82
+  review_notes: 可作为前台浏览器自动化形态样本，不宜默认进高权限业务链路。
+- id: openlit
+  name: openlit/openlit
+  url: https://github.com/openlit/openlit
+  source_url: https://github.com/openlit/openlit
+  license: Apache-2.0
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  verification_status: verified_public
+  industries:
+  - ai-infrastructure
+  - general-enterprise
+  - software-internet
+  scenarios:
+  - operations-admin
+  - r-and-d
+  role_groups:
+  - ai-platform
+  - infra-ops
+  - cost-governance
+  capabilities:
+  - logging
+  - cost-tracking
+  - guardrails
+  - state-management
+  roles:
+  - LLMOps 工程师
+  - 平台观测负责人
+  - AI 成本治理负责人
+  value_summary: 适合补齐“AI 员工不是只会干活，还要可观测、可评估、可控成本”这一层。
+  copy: 给 AI 平台和成本治理团队用，适合看调用链路、日志和花费；只有看板没有治理动作，观测价值会很快打折。
+  best_for:
+  - LLM observability / tracing / cost monitoring
+  - 企业内部 AI 平台的观测与评估基座
+  not_for:
+  - 没有日志分级和脱敏策略就全量接入
+  - 只看 dashboard 不做治理动作
+  risk_level: medium
+  risks:
+  - 观测平台会汇集 prompt、trace、调用数据，必须处理脱敏与留存策略
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 2,479 stars，README 含 Getting Started with LLM Observability。
+  score:
+    ranking_growth: 20
+    usefulness: 28
+    reproducibility: 14
+    safety: 11
+    communication: 8
+    total: 81
+  review_notes: 适合和 mem0 / MLflow / TensorZero 一起构成企业 AI 治理层。
+- id: airflow
+  name: apache/airflow
+  url: https://github.com/apache/airflow
+  source_url: https://github.com/apache/airflow
+  license: Apache-2.0
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  verification_status: verified_public
+  industries:
+  - general-enterprise
+  - ai-infrastructure
+  - professional-services
+  scenarios:
+  - operations-admin
+  - office
+  - r-and-d
+  role_groups:
+  - infra-ops
+  - operations-automation
+  - workflow-architecture
+  capabilities:
+  - workflow-templates
+  - state-management
+  - logging
+  - workflow-sdk
+  roles:
+  - 流程编排负责人
+  - 数据/AI 平台工程师
+  - 自动化运维工程师
+  value_summary: 虽然不是新项目，但它仍是企业工作流编排的公开强样本，适合补齐“AI 员工要落在什么调度底座上”。
+  copy: 给已经有调度体系的企业运维和流程架构团队用，适合把 AI 任务纳入定时和依赖编排；如果只是轻量自动化，别先上重平台。
+  best_for:
+  - 跨系统定时/依赖式流程编排
+  - 把 AI 任务纳入已有企业调度体系
+  not_for:
+  - 只想要轻量个人自动化却引入重型编排底座
+  - 没有运维能力就承诺平台稳定性
+  risk_level: medium
+  risks:
+  - 调度平台常掌握大量连接器与凭证，需要独立做密钥与任务权限治理
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 45,626 stars，README 含 Getting started。
+  score:
+    ranking_growth: 18
+    usefulness: 29
+    reproducibility: 15
+    safety: 11
+    communication: 8
+    total: 81
+  review_notes: 适合作为企业流程底座样本，强调“不是 AI 专属，但很关键”。
+- id: trigger-dev
+  name: triggerdotdev/trigger.dev
+  url: https://github.com/triggerdotdev/trigger.dev
+  source_url: https://github.com/triggerdotdev/trigger.dev
+  license: Apache-2.0
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  verification_status: verified_public
+  industries:
+  - software-internet
+  - ai-infrastructure
+  - general-enterprise
+  scenarios:
+  - operations-admin
+  - r-and-d
+  role_groups:
+  - engineering-platform
+  - operations-automation
+  - workflow-architecture
+  capabilities:
+  - workflow-sdk
+  - logging
+  - handoffs
+  - multi-agent-workflow
+  roles:
+  - 后台任务平台工程师
+  - AI 工作流开发者
+  - 自动化产品工程师
+  value_summary: 适合做 AI workflow / background jobs 平台样本，特别是需要看任务执行链路与可视化时。
+  copy: 给做长任务和事件驱动产品的团队用，适合追踪 AI workflow 和后台任务；secret 管理和失败补偿没设计好时别急着接业务系统。
+  best_for:
+  - 长任务、事件驱动与 AI workflow 编排
+  - 需要任务可视化与运行追踪的产品团队
+  not_for:
+  - 把有状态长任务当成“脚本跑一下”
+  - 没有 secret 管理就直接接业务系统
+  risk_level: medium
+  risks:
+  - 工作流平台通常持有回调、API key、任务上下文，必须做环境隔离与审计
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 15,161 stars，README 与 changelog 展示 workflow/agent 方向。
+  score:
+    ranking_growth: 26
+    usefulness: 28
+    reproducibility: 14
+    safety: 10
+    communication: 8
+    total: 86
+  review_notes: 可作为“AI 工作流产品化底座”代表条目。
+- id: mlflow
+  name: mlflow/mlflow
+  url: https://github.com/mlflow/mlflow
+  source_url: https://github.com/mlflow/mlflow
+  license: Apache-2.0
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  verification_status: verified_public
+  industries:
+  - ai-infrastructure
+  - software-internet
+  - general-enterprise
+  scenarios:
+  - r-and-d
+  - operations-admin
+  role_groups:
+  - ai-platform
+  - cost-governance
+  - strategy-research
+  capabilities:
+  - logging
+  - cost-tracking
+  - guardrails
+  - state-management
+  roles:
+  - ML 平台工程师
+  - 模型评估负责人
+  - AI 运营治理负责人
+  value_summary: 适合把实验、评估、监控和成本治理放进同一条企业 AI 交付链路，不该被误读成“训练框架而已”。
+  copy: 给做模型、agent 实验和评估的团队用，适合把实验记录、指标和治理放到同一条交付链路；平台装好了，不代表评估口径自然就有。
+  best_for:
+  - 模型/agent 实验追踪与评估
+  - 企业 AI 交付过程的可观测与治理
+  not_for:
+  - 没有平台维护能力却想一次性搭全套
+  - 只装平台不定义评估口径和审批节点
+  risk_level: medium
+  risks:
+  - 治理平台会汇总模型、数据、实验结果，需要明确访问控制和数据分类
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 26,210 stars，README 描述为 open source AI engineering platform。
+  score:
+    ranking_growth: 23
+    usefulness: 29
+    reproducibility: 14
+    safety: 11
+    communication: 8
+    total: 85
+  review_notes: 适合作为“企业 AI 评估/监控/治理层”关键条目。
+- id: tensorzero
+  name: tensorzero/tensorzero
+  url: https://github.com/tensorzero/tensorzero
+  source_url: https://github.com/tensorzero/tensorzero
+  license: Apache-2.0
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  verification_status: verified_public
+  industries:
+  - ai-infrastructure
+  - software-internet
+  - general-enterprise
+  scenarios:
+  - r-and-d
+  - operations-admin
+  role_groups:
+  - ai-platform
+  - cost-governance
+  - workflow-architecture
+  capabilities:
+  - llm-gateway
+  - logging
+  - guardrails
+  - openai-compatible-api
+  roles:
+  - LLMOps 工程师
+  - 模型网关负责人
+  - AI 平台架构师
+  value_summary: 适合把模型调用层、评估层、实验层收敛在一套 LLMOps 平台里，但也意味着平台治理责任更重。
+  copy: 给想把模型调用、评估和优化放进一套平台的 AI 团队用，适合做 LLMOps 底座；中心化之后治理责任更重，别只看功能不看权限。
+  best_for:
+  - 统一 LLM gateway 与观测层
+  - 把模型优化与实验纳入平台治理
+  not_for:
+  - 没有平台运维与评估能力却想一次性自建
+  - 忽略模型/提示数据的中心化风险
+  risk_level: medium
+  risks:
+  - 网关型平台会集中承载 prompt、路由、模型配置和日志，必须明确访问控制和留存策略
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 11,422 stars，README 含 Usage Example 与 gateway 部署说明。
+  score:
+    ranking_growth: 24
+    usefulness: 28
+    reproducibility: 14
+    safety: 10
+    communication: 8
+    total: 84
+  review_notes: 建议与 MLflow、OpenLIT 组合看，构成企业 AI 治理层对照样本。
