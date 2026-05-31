@@ -1779,3 +1779,290 @@ skills:
     communication: 8
     total: 84
   review_notes: 建议与 MLflow、OpenLIT 组合看，构成企业 AI 治理层对照样本。
+- id: n8n
+  name: n8n-io/n8n
+  url: https://github.com/n8n-io/n8n
+  license: Sustainable Use License / fair-code
+  source_type: github_repo
+  first_seen: '2026-06-01'
+  last_verified: '2026-06-01'
+  status: verified_public
+  industries:
+  - software-internet
+  - content-media
+  - retail-ecommerce
+  scenarios:
+  - sales-growth
+  - marketing-content
+  role_groups:
+  - content-marketing
+  - operations-automation
+  - strategy-research
+  capabilities:
+  - research-monitoring
+  - automation-integration
+  - analytics-reporting
+  - drafting-generation
+  roles:
+  - 营销增长负责人
+  - 内容运营负责人
+  - 出海营销负责人
+  - 自动化运营负责人
+  value_summary: 适合把表单、CRM、邮件、报表这些增长运营环节接起来，减少手工搬运；对外发送、分群规则和触发条件必须人工抽检。
+  copy: 给营销 Ops、增长负责人和内容分发团队用，适合做表单到 CRM、邮件、提醒、报表的流程编排；不要包装成自动骚扰或自动获客机器。
+  best_for:
+  - 营销 Ops 流程编排
+  - 表单 → CRM → 邮件 → 报表链路
+  - 内容分发与线索同步
+  not_for:
+  - 骚扰式外联
+  - 跳过审批的自动群发
+  - 对外二次分发前未做许可复核
+  risk_level: medium
+  risks:
+  - fair-code / 非纯 OSI 许可，外部二次分发前需复核
+  - 对外触达流程必须有人审规则和频率
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库；README 描述为 workflow automation platform with 400+ integrations / 900+ templates；2026-06-01 早报验证分 91。
+  - type: daily_briefing
+    note: reports/daily-skill-briefings/2026-06-01-marketing-skill-verification.md
+  score:
+    ranking_growth: 30
+    usefulness: 29
+    reproducibility: 15
+    safety: 8
+    communication: 9
+    total: 91
+  review_notes: 来自 2026-06-01 营销 / 出海增长 Skill 早报，已去重归档；对外使用需保留人工审核与安全边界。
+  source_url: https://github.com/n8n-io/n8n
+  verification_status: verified_public
+- id: activepieces
+  name: activepieces/activepieces
+  url: https://github.com/activepieces/activepieces
+  license: MIT / mixed license components
+  source_type: github_repo
+  first_seen: '2026-06-01'
+  last_verified: '2026-06-01'
+  status: verified_public
+  industries:
+  - software-internet
+  - content-media
+  - retail-ecommerce
+  scenarios:
+  - sales-growth
+  - marketing-content
+  role_groups:
+  - content-marketing
+  - operations-automation
+  - strategy-research
+  capabilities:
+  - research-monitoring
+  - automation-integration
+  - analytics-reporting
+  - drafting-generation
+  roles:
+  - 营销增长负责人
+  - 内容运营负责人
+  - 出海营销负责人
+  - 自动化运营负责人
+  value_summary: 适合把 AI 助手和 SaaS 工具接在一起，流程中保留审批节点，更适合作为可控自动化连接层。
+  copy: 给增长运营、自动化运营和 AI 应用负责人用，适合做工具连接、内容分发、跨系统同步；客户名单和发布流要保留人工审批。
+  best_for:
+  - AI 自动化连接层
+  - 营销流程自动化
+  - SaaS 工具联动与审批
+  not_for:
+  - 无人值守外联
+  - 把审批流写成自治营销代理
+  risk_level: medium
+  risks:
+  - 混合许可和企业使用边界需复核
+  - 涉及客户名单、审批流、发布流时必须留人工节点
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库；README 强调 AI Workflow Automation / AI Agents / MCP，并包含 Human in the Loop / approval；2026-06-01 早报验证分 83。
+  - type: daily_briefing
+    note: reports/daily-skill-briefings/2026-06-01-marketing-skill-verification.md
+  score:
+    ranking_growth: 24
+    usefulness: 28
+    reproducibility: 15
+    safety: 8
+    communication: 8
+    total: 83
+  review_notes: 来自 2026-06-01 营销 / 出海增长 Skill 早报，已去重归档；对外使用需保留人工审核与安全边界。
+  source_url: https://github.com/activepieces/activepieces
+  verification_status: verified_public
+- id: plausible-analytics
+  name: plausible/analytics
+  url: https://github.com/plausible/analytics
+  license: AGPL-3.0
+  source_type: github_repo
+  first_seen: '2026-06-01'
+  last_verified: '2026-06-01'
+  status: verified_public
+  industries:
+  - software-internet
+  - content-media
+  - retail-ecommerce
+  scenarios:
+  - sales-growth
+  - marketing-content
+  role_groups:
+  - content-marketing
+  - operations-automation
+  - strategy-research
+  capabilities:
+  - research-monitoring
+  - automation-integration
+  - analytics-reporting
+  - drafting-generation
+  roles:
+  - 营销增长负责人
+  - 内容运营负责人
+  - 出海营销负责人
+  - 自动化运营负责人
+  value_summary: 适合内容、落地页、newsletter 的访问与转化复盘，隐私压力较低；事件口径和归因解释仍要人工定。
+  copy: 给内容增长、数据分析和个人 IP 运营团队用，适合看落地页、内容分发、newsletter 的访问和转化；数据只辅助判断。
+  best_for:
+  - 隐私友好的网站分析
+  - 内容分发复盘
+  - 落地页转化观察
+  not_for:
+  - 替代完整 BI 或因果归因
+  - 未经口径设计就下业务结论
+  risk_level: medium
+  risks:
+  - AGPL 许可边界要写清
+  - 事件口径、权限、归因解释要人工定
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库；README 强调 privacy-friendly / cookie-free analytics；2026-06-01 早报验证分 82。
+  - type: daily_briefing
+    note: reports/daily-skill-briefings/2026-06-01-marketing-skill-verification.md
+  score:
+    ranking_growth: 22
+    usefulness: 27
+    reproducibility: 14
+    safety: 11
+    communication: 8
+    total: 82
+  review_notes: 来自 2026-06-01 营销 / 出海增长 Skill 早报，已去重归档；对外使用需保留人工审核与安全边界。
+  source_url: https://github.com/plausible/analytics
+  verification_status: verified_public
+- id: ghost
+  name: TryGhost/Ghost
+  url: https://github.com/TryGhost/Ghost
+  license: MIT
+  source_type: github_repo
+  first_seen: '2026-06-01'
+  last_verified: '2026-06-01'
+  status: verified_public
+  industries:
+  - software-internet
+  - content-media
+  - retail-ecommerce
+  scenarios:
+  - sales-growth
+  - marketing-content
+  role_groups:
+  - content-marketing
+  - operations-automation
+  - strategy-research
+  capabilities:
+  - research-monitoring
+  - automation-integration
+  - analytics-reporting
+  - drafting-generation
+  roles:
+  - 营销增长负责人
+  - 内容运营负责人
+  - 出海营销负责人
+  - 自动化运营负责人
+  value_summary: 适合把内容发布、订阅、newsletter、会员放在一套里，对个人 IP 和内容产品尤其顺手；标题、摘要、CTA 仍需编辑复核。
+  copy: 给个人 IP、内容产品和 newsletter 运营者用，适合把发布、订阅、会员、邮件放进一个工作台；AI 草稿不能直接发。
+  best_for:
+  - 个人 IP 内容发布
+  - newsletter 与会员运营
+  - 内容产品化
+  not_for:
+  - 未经编辑复核的自动发布
+  - 自动生成价格页或承诺性销售文案
+  risk_level: low
+  risks:
+  - 标题、摘要、CTA、价格信息要编辑复核
+  - 会员与订阅条款需人工确认
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库；Ghost 是内容发布与订阅产品；2026-06-01 早报验证分 81。
+  - type: daily_briefing
+    note: reports/daily-skill-briefings/2026-06-01-marketing-skill-verification.md
+  score:
+    ranking_growth: 22
+    usefulness: 27
+    reproducibility: 14
+    safety: 10
+    communication: 8
+    total: 81
+  review_notes: 来自 2026-06-01 营销 / 出海增长 Skill 早报，已去重归档；对外使用需保留人工审核与安全边界。
+  source_url: https://github.com/TryGhost/Ghost
+  verification_status: verified_public
+- id: rsshub
+  name: RSSNext/RSSHub
+  url: https://github.com/RSSNext/RSSHub
+  license: MIT
+  source_type: github_repo
+  first_seen: '2026-06-01'
+  last_verified: '2026-06-01'
+  status: verified_public
+  industries:
+  - software-internet
+  - content-media
+  - retail-ecommerce
+  scenarios:
+  - sales-growth
+  - marketing-content
+  role_groups:
+  - content-marketing
+  - operations-automation
+  - strategy-research
+  capabilities:
+  - research-monitoring
+  - automation-integration
+  - analytics-reporting
+  - drafting-generation
+  roles:
+  - 营销增长负责人
+  - 内容运营负责人
+  - 出海营销负责人
+  - 自动化运营负责人
+  value_summary: 适合做选题、竞品和公开动态监控，把公开网页转成可订阅信号；只看公开、可复核来源。
+  copy: 给选题研究、内容运营和竞品监控团队用，适合持续订阅公开动态；不碰私域、登录后页面和未授权数据。
+  best_for:
+  - 公开信息订阅
+  - 选题与竞品雷达
+  - 内容监控信号源
+  not_for:
+  - 抓取私域或登录后页面
+  - 绕过授权的数据采集
+  - 把二手信号当一手事实
+  risk_level: medium
+  risks:
+  - 需要严格限定公开来源
+  - 不得用于绕过平台授权或采集私密数据
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库；常用于生成 RSS 订阅源；2026-06-01 早报验证分 75。
+  - type: daily_briefing
+    note: reports/daily-skill-briefings/2026-06-01-marketing-skill-verification.md
+  score:
+    ranking_growth: 20
+    usefulness: 25
+    reproducibility: 14
+    safety: 8
+    communication: 8
+    total: 75
+  review_notes: 来自 2026-06-01 营销 / 出海增长 Skill 早报，已去重归档；对外使用需保留人工审核与安全边界。
+  source_url: https://github.com/RSSNext/RSSHub
+  verification_status: verified_public
