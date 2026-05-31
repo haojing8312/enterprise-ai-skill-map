@@ -56,6 +56,12 @@ V0.1 先覆盖四类：
 - 只有概念、没有可验证来源的“神器”
 - 把辅助工具包装成“接上就能自治”的夸大表述
 
+## Release & Maintenance
+
+- Changelog: `CHANGELOG.md`
+- 维护规则: `MAINTENANCE.md`
+- 维护节奏：每日检查、每周复核、每月整理一次公开快照
+
 ## License
 
 MIT
