@@ -1,0 +1,178 @@
+industries:
+- id: general-enterprise
+  name: 通用企业/内部运营
+  desc: 不绑定单一行业，重点在文档、知识库、客服、流程、权限和内部协作。
+  roles:
+  - knowledge-ops
+  - operations-admin
+  - customer-success
+  - strategy-research
+  - digital-employee-architect
+- id: software-internet
+  name: 软件/互联网/研发组织
+  desc: 研发、测试、DevOps、AI 应用工程、平台工程最先落地的一组场景。
+  roles:
+  - engineering
+  - engineering-management
+  - qa-testing
+  - ai-platform
+  - engineering-platform
+- id: ai-infrastructure
+  name: AI/数据基础设施团队
+  desc: 模型服务、推理网关、本地部署、成本治理和工具接入。
+  roles:
+  - ai-platform
+  - infra-ops
+  - cost-governance
+  - digital-employee-architect
+- id: content-media
+  name: 内容/媒体/营销服务
+  desc: 选题、研究、写作、视觉、分发、复盘，以及内容团队自己的 Skill 库。
+  roles:
+  - content-marketing
+  - content-research
+  - knowledge-ops
+  - operations-automation
+- id: consulting-training
+  name: 咨询/培训/知识服务
+  desc: 把 Skill 变成课程、咨询交付、企业内训、工作坊和方案库。
+  roles:
+  - strategy-research
+  - solution-delivery
+  - digital-employee-designer
+  - knowledge-ops
+- id: professional-services
+  name: 专业服务：法律/咨询/研究
+  desc: 合同、资料、报告、尽调、研究支持等高审校要求场景。
+  roles:
+  - legal-compliance
+  - document-ops
+  - strategy-research
+  - knowledge-ops
+- id: government-stateowned
+  name: 政企/国企/内网场景
+  desc: 重视内网、权限、审计、国产化/本地化部署和流程留痕。
+  roles:
+  - ai-platform
+  - infra-ops
+  - operations-admin
+  - legal-compliance
+- id: retail-ecommerce
+  name: 零售/电商/客服密集型
+  desc: 客服、运营、网页巡检、FAQ、用户记忆和活动支持。
+  roles:
+  - customer-success
+  - operations-automation
+  - content-marketing
+  - product-manager
+- id: finance-tax
+  name: 金融/财税
+  desc: 预算、报销、成本、税务材料、金融合规。当前先占位，等待可公开复核样本。
+  roles:
+  - finance-tax
+  - legal-compliance
+  - cost-governance
+- id: healthcare
+  name: 医疗健康
+  desc: 医疗知识、院内流程、培训、客服、文档辅助。当前先占位，后续必须强化隐私和合规边界。
+  roles:
+  - solution-delivery
+  - knowledge-ops
+  - customer-success
+  - legal-compliance
+- id: manufacturing
+  name: 制造业
+  desc: 工艺文档、设备巡检、质检、培训、售后支持。当前先占位，等待行业流程样本。
+  roles:
+  - operations-admin
+  - qa-testing
+  - solution-delivery
+  - knowledge-ops
+- id: education
+  name: 教育/培训机构
+  desc: 课程设计、教案、作业反馈、知识库和培训运营。
+  roles:
+  - hr-training
+  - knowledge-ops
+  - content-research
+  - digital-employee-designer
+role_groups:
+- id: executive-management
+  name: 老板/高管/业务负责人
+  desc: 看方向、定边界、决定先在哪个流程试点。
+- id: strategy-research
+  name: 策略/行业研究员
+  desc: 负责资料检索、竞品研究、行业分析和决策前材料。
+- id: engineering
+  name: 开发工程师
+  desc: 读代码、改 bug、写测试、做小范围实现。
+- id: engineering-management
+  name: 技术负责人/研发效能负责人
+  desc: 设计 AI 编码流程、验收标准、代码审查和发布边界。
+- id: engineering-platform
+  name: 研发平台/GitHub 管理员
+  desc: 负责代码协作平台、Issue/PR 自动化、仓库权限和审计。
+- id: qa-testing
+  name: QA/测试负责人
+  desc: 网页回归、测试执行、验收检查和质量门禁。
+- id: ai-platform
+  name: AI 平台工程师
+  desc: 模型服务、网关、推理平台、MCP/Agent 工具接入。
+- id: infra-ops
+  name: 基础设施/运维负责人
+  desc: 内网部署、GPU、边缘设备、系统稳定性和权限隔离。
+- id: cost-governance
+  name: 成本治理负责人
+  desc: 模型调用、GPU 资源、网关计费和成本透明化。
+- id: ai-application
+  name: AI 应用工程师
+  desc: 把 Agent SDK、工具调用和业务流程做成可测试应用。
+- id: workflow-architecture
+  name: 工作流架构师
+  desc: 设计多代理交接、状态流转、异常处理和可观察性。
+- id: digital-employee-architect
+  name: 数字员工架构师
+  desc: 从组织能力出发，定义角色、工具、权限、交接和验收。
+- id: digital-employee-designer
+  name: 数字员工/Skill 设计师
+  desc: 把可复用能力包装成可分发、可维护的 Skill 或模板。
+- id: content-marketing
+  name: 内容/市场运营负责人
+  desc: 选题、写作、图文、渠道分发、数据复盘。
+- id: content-research
+  name: 内容研究助理
+  desc: 为长文、短内容、课程和方案准备材料与出处。
+- id: knowledge-ops
+  name: 知识库运营
+  desc: 整理文档、沉淀经验、维护可检索的知识资产。
+- id: document-ops
+  name: 文档处理专员
+  desc: 格式转换、资料清洗、文档归档、引用准备。
+- id: legal-compliance
+  name: 法务/合规负责人
+  desc: 合同、隐私、权限、数据使用和对外表述风险提示。
+- id: operations-admin
+  name: 运营/行政/流程管理员
+  desc: 账号、权限、平台接入、制度、巡检和流程协调。
+- id: operations-automation
+  name: 运营自动化负责人
+  desc: 把网页、后台、表单、报表等重复操作半自动化。
+- id: customer-success
+  name: 客服/客户成功负责人
+  desc: FAQ、工单、用户记忆、实施手册和交付复盘。
+- id: product-manager
+  name: 产品经理
+  desc: 定义需求、验收口径、用户记忆和体验边界。
+- id: solution-delivery
+  name: 解决方案/交付架构师
+  desc: 把 Skill 组合成可交付的行业方案、课程或咨询包。
+- id: hr-training
+  name: 人力/培训运营
+  desc: 招聘、培训、课程、员工手册和能力评估。
+- id: finance-tax
+  name: 财务/税务/报销负责人
+  desc: 预算、报销、成本和税务材料准备；当前需要更多公开样本。
+- id: skill-research
+  name: Skill 观察研究员
+  desc: 发现、验证、记录外部 Skill 和社区工作流。
+rule: 每个 Skill 必须至少有 industries、role_groups、scenarios 三组标签；对外页面优先按行业和岗位导航，scenarios 作为使用场景补充。

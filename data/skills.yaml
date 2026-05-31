@@ -7,9 +7,16 @@ skills:
   first_seen: 2026-05-31
   last_verified: 2026-05-31
   status: verified_public
+  industries:
+  - software-internet
+  - consulting-training
   scenarios:
   - r-and-d
   - operations-admin
+  role_groups:
+  - engineering-management
+  - engineering
+  - workflow-architecture
   capabilities:
   - planning
   - testing
@@ -47,8 +54,14 @@ skills:
   first_seen: '2026-05-31'
   last_verified: '2026-05-31'
   status: verified_public
+  industries:
+  - software-internet
   scenarios:
   - r-and-d
+  role_groups:
+  - engineering
+  - engineering-management
+  - qa-testing
   capabilities:
   - planning
   - code-generation
@@ -89,8 +102,15 @@ skills:
   first_seen: '2026-05-31'
   last_verified: '2026-05-31'
   status: verified_public
+  industries:
+  - software-internet
+  - ai-infrastructure
   scenarios:
   - r-and-d
+  role_groups:
+  - engineering
+  - engineering-platform
+  - engineering-management
   capabilities:
   - planning
   - code-generation
@@ -131,9 +151,16 @@ skills:
   first_seen: '2026-05-31'
   last_verified: '2026-05-31'
   status: verified_public
+  industries:
+  - ai-infrastructure
+  - government-stateowned
+  - software-internet
   scenarios:
   - r-and-d
   - operations-admin
+  role_groups:
+  - ai-platform
+  - infra-ops
   capabilities:
   - local-inference
   - model-serving
@@ -173,9 +200,16 @@ skills:
   first_seen: '2026-05-31'
   last_verified: '2026-05-31'
   status: verified_public
+  industries:
+  - ai-infrastructure
+  - software-internet
   scenarios:
   - r-and-d
   - operations-admin
+  role_groups:
+  - ai-platform
+  - infra-ops
+  - cost-governance
   capabilities:
   - high-throughput-serving
   - model-serving
@@ -215,9 +249,17 @@ skills:
   first_seen: '2026-05-31'
   last_verified: '2026-05-31'
   status: verified_public
+  industries:
+  - general-enterprise
+  - software-internet
+  - ai-infrastructure
   scenarios:
   - r-and-d
   - office
+  - operations-admin
+  role_groups:
+  - ai-platform
+  - digital-employee-architect
   - operations-admin
   capabilities:
   - tool-integration
@@ -258,9 +300,15 @@ skills:
   first_seen: '2026-05-31'
   last_verified: '2026-05-31'
   status: verified_public
+  industries:
+  - software-internet
   scenarios:
   - r-and-d
   - operations-admin
+  role_groups:
+  - engineering-platform
+  - operations-admin
+  - engineering-management
   capabilities:
   - github-integration
   - issue-pr-ops
@@ -300,10 +348,18 @@ skills:
   first_seen: '2026-05-31'
   last_verified: '2026-05-31'
   status: verified_public
+  industries:
+  - software-internet
+  - retail-ecommerce
+  - content-media
   scenarios:
   - r-and-d
   - marketing-content
   - operations-admin
+  role_groups:
+  - qa-testing
+  - operations-automation
+  - engineering
   capabilities:
   - browser-automation
   - web-testing
@@ -343,10 +399,18 @@ skills:
   first_seen: '2026-05-31'
   last_verified: '2026-05-31'
   status: verified_public
+  industries:
+  - general-enterprise
+  - content-media
+  - consulting-training
   scenarios:
   - r-and-d
   - marketing-content
   - operations-admin
+  role_groups:
+  - knowledge-ops
+  - digital-employee-designer
+  - workflow-architecture
   capabilities:
   - skill-library
   - agent-prompts
@@ -386,9 +450,16 @@ skills:
   first_seen: '2026-05-31'
   last_verified: '2026-05-31'
   status: blocked
+  industries:
+  - content-media
+  - consulting-training
   scenarios:
   - marketing-content
   - operations-admin
+  role_groups:
+  - content-marketing
+  - skill-research
+  - digital-employee-designer
   capabilities:
   - skill-library
   - writing-skills
@@ -426,9 +497,18 @@ skills:
   first_seen: '2026-05-31'
   last_verified: '2026-05-31'
   status: verified_public
+  industries:
+  - general-enterprise
+  - content-media
+  - consulting-training
+  - professional-services
   scenarios:
   - r-and-d
   - marketing-content
+  role_groups:
+  - strategy-research
+  - content-research
+  - content-marketing
   capabilities:
   - deep-research
   - source-synthesis
@@ -468,9 +548,17 @@ skills:
   first_seen: '2026-05-31'
   last_verified: '2026-05-31'
   status: verified_public
+  industries:
+  - software-internet
+  - ai-infrastructure
+  - consulting-training
   scenarios:
   - r-and-d
   - operations-admin
+  role_groups:
+  - ai-application
+  - workflow-architecture
+  - digital-employee-architect
   capabilities:
   - multi-agent-workflow
   - handoffs
@@ -510,9 +598,17 @@ skills:
   first_seen: '2026-05-31'
   last_verified: '2026-05-31'
   status: verified_public
+  industries:
+  - general-enterprise
+  - professional-services
+  - content-media
   scenarios:
   - office
   - marketing-content
+  - legal-compliance
+  role_groups:
+  - document-ops
+  - knowledge-ops
   - legal-compliance
   capabilities:
   - document-conversion
@@ -553,9 +649,16 @@ skills:
   first_seen: '2026-05-31'
   last_verified: '2026-05-31'
   status: verified_public
+  industries:
+  - ai-infrastructure
+  - software-internet
   scenarios:
   - r-and-d
   - operations-admin
+  role_groups:
+  - ai-platform
+  - cost-governance
+  - infra-ops
   capabilities:
   - llm-gateway
   - provider-routing
@@ -596,10 +699,17 @@ skills:
   first_seen: '2026-05-31'
   last_verified: '2026-05-31'
   status: verified_public
+  industries:
+  - general-enterprise
+  - retail-ecommerce
   scenarios:
   - office
   - customer-service
   - operations-admin
+  role_groups:
+  - customer-success
+  - product-manager
+  - knowledge-ops
   capabilities:
   - agent-memory
   - profile-memory

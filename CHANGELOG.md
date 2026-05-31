@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-05-31
+
+- 调整仓库主导航：从单一场景入口升级为“行业 × 岗位 × 场景”三层结构。
+- 新增 `industries/`、`roles/`、`docs/industry-role-matrix.md`、`data/classification.yaml`。
+- `data/skills.yaml` 为全部已收录 Skill 补充 `industries` 与 `role_groups` 字段。
+
+
 ## [0.1.0] - 2026-05-31
 
 首次公开发布。

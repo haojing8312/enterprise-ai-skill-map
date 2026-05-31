@@ -9,9 +9,11 @@ source_type:
 first_seen:
 last_verified:
 status:
-scenarios: []
+industries: []      # 行业入口：software-internet / content-media / general-enterprise ...
+scenarios: []       # 场景入口：r-and-d / office / customer-service ...
+role_groups: []     # 岗位入口：engineering / ai-platform / content-marketing ...
 capabilities: []
-roles: []
+roles: []           # 原始/中文岗位描述，可比 role_groups 更细
 value_summary:
 best_for: []
 not_for: []
