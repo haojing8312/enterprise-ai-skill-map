@@ -1,41 +1,633 @@
 skills:
-  - id: superpowers
-    name: obra/superpowers
-    url: https://github.com/obra/superpowers
-    license: MIT
-    source_type: github_repo
-    first_seen: 2026-05-31
-    last_verified: 2026-05-31
-    status: verified_public
-    scenarios:
-      - r-and-d
-      - operations-admin
-    capabilities:
-      - planning
-      - testing
-      - debugging
-      - acceptance-review
-    roles:
-      - AI coding assistant
-      - engineering manager
-      - digital employee orchestrator
-    value_summary: "把 spec、计划、测试、排障、验收这些动作前置，适合作为 AI 写码流程样本。"
-    best_for:
-      - "研发团队建立 AI 编码工作流"
-      - "数字员工任务分解与验收"
-    not_for:
-      - "无测试体系、想直接自动放权的团队"
-    risk_level: low
-    risks:
-      - "不能夸大为全自动自治"
-    evidence:
-      - type: github
-        note: "公开仓库，MIT 协议"
-    score:
-      ranking_growth: 0
-      usefulness: 28
-      reproducibility: 14
-      safety: 15
-      communication: 8
-      total: 65
-    review_notes: "可做样本，但不应神化。"
+- id: superpowers
+  name: obra/superpowers
+  url: https://github.com/obra/superpowers
+  license: MIT
+  source_type: github_repo
+  first_seen: 2026-05-31
+  last_verified: 2026-05-31
+  status: verified_public
+  scenarios:
+  - r-and-d
+  - operations-admin
+  capabilities:
+  - planning
+  - testing
+  - debugging
+  - acceptance-review
+  roles:
+  - 技术负责人
+  - 研发效能负责人
+  - AI 编码流程设计者
+  value_summary: 如果团队已经在用 AI 写码，但总要靠人最后收烂摊子，可以先看它怎么把 spec、测试、验收往前放。它更像流程样本，不是万能外挂。
+  best_for:
+  - 研发团队建立 AI 编码工作流
+  - 数字员工任务分解与验收
+  not_for:
+  - 无测试体系、想直接自动放权的团队
+  risk_level: low
+  risks:
+  - 不能夸大为全自动自治
+  evidence:
+  - type: github
+    note: 公开仓库，MIT 协议
+  score:
+    ranking_growth: 0
+    usefulness: 28
+    reproducibility: 14
+    safety: 15
+    communication: 8
+    total: 65
+  review_notes: 可做样本，但不应神化。
+- id: codex
+  name: openai/codex
+  url: https://github.com/openai/codex
+  license: Apache-2.0
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  scenarios:
+  - r-and-d
+  capabilities:
+  - planning
+  - code-generation
+  - debugging
+  - terminal-execution
+  - code-review
+  roles:
+  - 开发工程师
+  - 代码审阅者
+  - 研发效能负责人
+  value_summary: 适合给会看代码的人提速：读仓库、修小 bug、跑命令都顺手，但前提是有人审、有人测。
+  best_for:
+  - 研发团队做 bugfix、代码审阅、仓库导航
+  - 把 AI 编码能力纳入有人审的交付链路
+  not_for:
+  - 直接跳过评审去改生产系统
+  - 把生成代码视为最终答案
+  risk_level: medium
+  risks:
+  - 会执行终端命令，若权限边界没控好可能误改代码或读取敏感文件
+  - 生成代码仍需人工测试与审阅
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 87,167 stars，README 描述为 terminal coding agent。
+  score:
+    ranking_growth: 29
+    usefulness: 29
+    reproducibility: 15
+    safety: 11
+    communication: 9
+    total: 93
+  review_notes: 适合做企业 AI 编码助手样本，但必须放在 review/test 之后，而不是替代 review/test。
+- id: opencode
+  name: anomalyco/opencode
+  url: https://github.com/anomalyco/opencode
+  license: MIT
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  scenarios:
+  - r-and-d
+  capabilities:
+  - planning
+  - code-generation
+  - debugging
+  - agent-workflow
+  - terminal-execution
+  roles:
+  - 平台工程师
+  - 研发效能负责人
+  - 开源工具负责人
+  value_summary: 想自己掌控 AI 编码流程，而不是全押某个闭源产品，可以拿它做开源底座。别把“能改代码”理解成“能自己交付”。
+  best_for:
+  - 想搭建可二次开发的 AI 编码流程
+  - 研究开源 coding agent 的企业接入方式
+  not_for:
+  - 没有沙箱/权限控制的生产环境
+  - 把它包装成无人值守自治开发
+  risk_level: medium
+  risks:
+  - 同样具备执行命令和改仓库能力，需要沙箱与审批边界
+  - 开源可扩展性强，但也意味着接入方要自担运维和安全设计
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，MIT；2026-05-31 GitHub API 显示 167,573 stars，官网为 opencode.ai。
+  score:
+    ranking_growth: 30
+    usefulness: 28
+    reproducibility: 15
+    safety: 10
+    communication: 9
+    total: 92
+  review_notes: 很适合放进“企业为何需要权限边界和验收机制”这一类案例。
+- id: llama-cpp
+  name: ggml-org/llama.cpp
+  url: https://github.com/ggml-org/llama.cpp
+  license: MIT
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  scenarios:
+  - r-and-d
+  - operations-admin
+  capabilities:
+  - local-inference
+  - model-serving
+  - quantization
+  - edge-deployment
+  roles:
+  - AI 基础设施工程师
+  - 内网工具负责人
+  - 边缘部署工程师
+  value_summary: 如果场景出不了网，或者想先把模型跑在自己机器上，它是个靠谱底座。但它解决的是推理，不是业务流程。
+  best_for:
+  - 内网环境或成本敏感场景做本地模型验证
+  - 把模型推理能力嵌入私有工具链
+  not_for:
+  - 把仓库 MIT 误解成模型权利也完全开放
+  - 没有硬件评估就直接承诺效果
+  risk_level: medium
+  risks:
+  - 仓库代码是 MIT，但模型权利仍取决于各模型许可证
+  - 本地部署会引入硬件、性能和维护成本
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，MIT；2026-05-31 GitHub API 显示 113,893 stars，README 描述为 C/C++ LLM inference。
+  score:
+    ranking_growth: 29
+    usefulness: 27
+    reproducibility: 14
+    safety: 10
+    communication: 9
+    total: 89
+  review_notes: 适合归入“基础设施型 Skill/能力底座”，不是即插即用的业务员工。
+- id: vllm
+  name: vllm-project/vllm
+  url: https://github.com/vllm-project/vllm
+  license: Apache-2.0
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  scenarios:
+  - r-and-d
+  - operations-admin
+  capabilities:
+  - high-throughput-serving
+  - model-serving
+  - inference-optimization
+  - openai-compatible-api
+  roles:
+  - AI 平台工程师
+  - 推理服务负责人
+  - GPU 资源运营
+  value_summary: 当团队开始同时接多模型、看吞吐和成本时，再考虑它更合适。别把它当成一键省心的 SaaS。
+  best_for:
+  - 多模型统一服务层
+  - GPU 资源利用率和吞吐要求高的团队
+  not_for:
+  - 没有运维能力却想一键拥有稳定平台
+  - 忽略模型 license 与 GPU 成本
+  risk_level: medium
+  risks:
+  - 需要 GPU/推理基础设施，实施门槛高于通用 SaaS
+  - 模型可用性与合规性不由 vLLM 仓库本身背书
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 81,458 stars，主页为 vllm.ai。
+  score:
+    ranking_growth: 28
+    usefulness: 29
+    reproducibility: 14
+    safety: 10
+    communication: 9
+    total: 90
+  review_notes: 可作为“企业自建模型服务层”代表条目。
+- id: mcp-servers
+  name: modelcontextprotocol/servers
+  url: https://github.com/modelcontextprotocol/servers
+  license: Apache-2.0 / MIT legacy / docs CC-BY-4.0
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  scenarios:
+  - r-and-d
+  - office
+  - operations-admin
+  capabilities:
+  - tool-integration
+  - system-connectors
+  - agent-extensions
+  - protocol-reference
+  roles:
+  - AI 平台工程师
+  - 系统集成负责人
+  - 数字员工架构师
+  value_summary: 它的价值不是“更聪明”，而是把文件、浏览器、GitHub 这些工具接进来，让数字员工真的能干活。前提是权限要一项一项收紧。
+  best_for:
+  - 梳理企业工具接入清单
+  - 为数字员工补浏览器、文件、GitHub 等外部工具接口
+  not_for:
+  - 不做最小权限设计就整包接入
+  - 忽略仓库内不同目录的 license 过渡边界
+  risk_level: medium
+  risks:
+  - 不同 server 能触达不同系统，安全边界取决于具体接入项
+  - LICENSE 正在从 MIT 过渡到 Apache-2.0，需要记录复合许可边界
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库；2026-05-31 GitHub API 显示 86,494 stars，LICENSE 首段明确处于 MIT→Apache-2.0 迁移期，文档为 CC-BY-4.0。
+  score:
+    ranking_growth: 28
+    usefulness: 28
+    reproducibility: 14
+    safety: 9
+    communication: 9
+    total: 88
+  review_notes: 适合作为协议/连接器目录收录，但不要把每个 server 的风险一概而论。
+- id: github-mcp-server
+  name: github/github-mcp-server
+  url: https://github.com/github/github-mcp-server
+  license: MIT
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  scenarios:
+  - r-and-d
+  - operations-admin
+  capabilities:
+  - github-integration
+  - issue-pr-ops
+  - repo-context
+  - agent-tooling
+  roles:
+  - 研发平台工程师
+  - GitHub 管理员
+  - 工程协作自动化负责人
+  value_summary: 如果团队已经把 issue、PR、review 都放在 GitHub，这个 server 很适合接给开发型数字员工。先管好 token，再谈自动化。
+  best_for:
+  - 研发协作自动化
+  - 代码库与工单系统一体化
+  not_for:
+  - 给过宽 token 权限
+  - 把仓库写权限直接开放给无审批代理
+  risk_level: medium
+  risks:
+  - 风险主要集中在 GitHub token scope 和写权限控制
+  - 需要明确哪些代理只能读、哪些代理能写或发评论
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，MIT；2026-05-31 GitHub API 显示 30,299 stars，README 描述为 GitHub official MCP server。
+  score:
+    ranking_growth: 25
+    usefulness: 27
+    reproducibility: 14
+    safety: 9
+    communication: 9
+    total: 84
+  review_notes: 企业价值清晰，但前提是 token 权限和审计链路设置到位。
+- id: playwright-mcp
+  name: microsoft/playwright-mcp
+  url: https://github.com/microsoft/playwright-mcp
+  license: Apache-2.0
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  scenarios:
+  - r-and-d
+  - marketing-content
+  - operations-admin
+  capabilities:
+  - browser-automation
+  - web-testing
+  - ui-regression
+  - agent-tooling
+  roles:
+  - QA 负责人
+  - 运营自动化负责人
+  - 前端测试工程师
+  value_summary: 凡是需要“真的打开网页点一遍”的场景，它比纯文本 agent 靠谱。但它点的是真系统，所以账号隔离和审批不能省。
+  best_for:
+  - 网页回归测试与可视化 QA
+  - 需要浏览器执行能力的数字员工
+  not_for:
+  - 登录高敏系统却没有隔离账号
+  - 把浏览器自动化当成无风险点击器
+  risk_level: medium
+  risks:
+  - 浏览器会接触会话、Cookie、后台页面，必须隔离凭证与账号
+  - 自动点击可能触发真实外部动作，需要审批边界
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 33,246 stars，npm 包名为 @playwright/mcp。
+  score:
+    ranking_growth: 26
+    usefulness: 27
+    reproducibility: 14
+    safety: 8
+    communication: 9
+    total: 84
+  review_notes: 非常适合做 QA/运营代理，但必须单独写账号与审批规范。
+- id: claude-skills
+  name: alirezarezvani/claude-skills
+  url: https://github.com/alirezarezvani/claude-skills
+  license: MIT
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  scenarios:
+  - r-and-d
+  - marketing-content
+  - operations-admin
+  capabilities:
+  - skill-library
+  - agent-prompts
+  - workflow-templates
+  - role-packaging
+  roles:
+  - 知识库运营
+  - 数字员工设计师
+  - 流程模板维护者
+  value_summary: 适合拿来研究企业内部 skill 库怎么分层、怎么裁剪。别整仓搬进来，不然上下文很快失控。
+  best_for:
+  - 搭建企业内部 skill library
+  - 给不同代理角色分发可复用技能包
+  not_for:
+  - 整仓全装导致上下文膨胀
+  - 不做筛选就把社区 skill 当企业 SOP
+  risk_level: medium
+  risks:
+  - 社区 skill 质量参差，需要二次验证和删改
+  - 一次性装太多 skill 会明显增加上下文负担
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，MIT；2026-05-31 GitHub API 显示 16,646 stars，README 声称覆盖 300+ skills/agents/plugins。
+  score:
+    ranking_growth: 23
+    usefulness: 25
+    reproducibility: 14
+    safety: 9
+    communication: 9
+    total: 80
+  review_notes: 适合当目录设计样本，不适合未经裁剪就整包进企业环境。
+- id: baoyu-skills
+  name: JimLiu/baoyu-skills
+  url: https://github.com/JimLiu/baoyu-skills
+  license: UNLICENSED / no LICENSE file found
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: blocked
+  scenarios:
+  - marketing-content
+  - operations-admin
+  capabilities:
+  - skill-library
+  - writing-skills
+  - workflow-templates
+  roles:
+  - 内容运营负责人
+  - skill 观察研究员
+  - 数字员工方案设计
+  value_summary: 这个仓库更适合当观察样本，不适合直接拿去商用复用。现在最大的卡点不是能力，而是许可边界没讲清。
+  best_for:
+  - 先做观察样本，研究 skill packaging 方式
+  not_for:
+  - 直接复制到企业库并对外分发
+  - 把未声明许可的仓库当成默认可商用素材
+  risk_level: high
+  risks:
+  - GitHub API license endpoint 返回 404，仓库根目录未发现 LICENSE，复用与再发布边界不清楚
+  - 即使 README 提供安装方式，也不等于获得明确再分发权利
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库；2026-05-31 GitHub API 显示 19,961 stars，但 license 接口 404，README 仅说明安装方式，未给出明确 LICENSE。
+  score:
+    ranking_growth: 24
+    usefulness: 24
+    reproducibility: 12
+    safety: 0
+    communication: 9
+    total: 69
+  review_notes: 按当前标准应 BLOCK，待补充明确 license 或授权说明后再转 verified。
+- id: open-deep-research
+  name: langchain-ai/open_deep_research
+  url: https://github.com/langchain-ai/open_deep_research
+  license: MIT
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  scenarios:
+  - r-and-d
+  - marketing-content
+  capabilities:
+  - deep-research
+  - source-synthesis
+  - web-retrieval
+  - report-drafting
+  roles:
+  - 行业研究员
+  - 内容研究助理
+  - 策略分析师
+  value_summary: 需要先把资料捞全、把出处和分歧摆出来时，它很有用。别让它跳过核查直接变成可发观点。
+  best_for:
+  - 行业研究、竞品研究、内容资料初稿
+  - 给研究型数字员工提供基线 workflow
+  not_for:
+  - 把自动检索结果直接当最终事实
+  - 没有引用核查就进入对外发布
+  risk_level: medium
+  risks:
+  - 研究链路可能继承网页噪音与错误引用，需要事实核验
+  - 更适合作为研究初稿引擎，不是最终审校者
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，MIT；2026-05-31 GitHub API 显示 11,535 stars，由 langchain-ai 维护。
+  score:
+    ranking_growth: 22
+    usefulness: 27
+    reproducibility: 14
+    safety: 10
+    communication: 9
+    total: 82
+  review_notes: 非常适合内容/研究场景，但要搭配事实核验与人审。
+- id: openai-agents-python
+  name: openai/openai-agents-python
+  url: https://github.com/openai/openai-agents-python
+  license: MIT
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  scenarios:
+  - r-and-d
+  - operations-admin
+  capabilities:
+  - multi-agent-workflow
+  - handoffs
+  - tool-calling
+  - workflow-sdk
+  roles:
+  - AI 应用工程师
+  - 工作流架构师
+  - 多代理编排负责人
+  value_summary: 适合自己搭一套有人设、有交接、有工具调用的数字员工原型。它是 SDK，不是现成业务系统。
+  best_for:
+  - 需要程序化编排 agent handoff 的团队
+  - 把多个角色代理组织成可测试流程
+  not_for:
+  - 把框架能力误当成完整业务系统
+  - 没有评测与观察机制就直接上生产
+  risk_level: medium
+  risks:
+  - 框架只提供编排能力，业务边界和安全仍由接入方负责
+  - 若没有 tracing/审计，流程复杂后难排障
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，MIT；2026-05-31 GitHub API 显示 26,779 stars，官方文档站为 openai.github.io/openai-agents-python。
+  score:
+    ranking_growth: 24
+    usefulness: 26
+    reproducibility: 14
+    safety: 10
+    communication: 9
+    total: 83
+  review_notes: 适合做“多代理编排层”条目，不应夸大为开箱即用的企业员工系统。
+- id: markitdown
+  name: microsoft/markitdown
+  url: https://github.com/microsoft/markitdown
+  license: MIT
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  scenarios:
+  - office
+  - marketing-content
+  - legal-compliance
+  capabilities:
+  - document-conversion
+  - markdown-normalization
+  - file-ingestion
+  - knowledge-prep
+  roles:
+  - 知识库运营
+  - 文档处理专员
+  - 研究助理
+  value_summary: 企业里一堆 PDF、PPT、Word 进不了 AI 流程时，它能先把格式摊平。别把转换后的 Markdown 当原件。
+  best_for:
+  - 知识库入库前的文档清洗
+  - 把 Office/PDF 内容接进研究或写作链路
+  not_for:
+  - 把转换结果当成无损原件
+  - 含敏感文件却没有脱敏/隔离策略
+  risk_level: low
+  risks:
+  - 处理的是原始文件，若包含敏感信息仍需脱敏和访问控制
+  - 格式转换会有信息损失或结构偏差，需要人工抽检
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，MIT；2026-05-31 GitHub API 显示 132,964 stars，README 描述为 Office/PDF to Markdown 工具。
+  score:
+    ranking_growth: 29
+    usefulness: 27
+    reproducibility: 15
+    safety: 7
+    communication: 9
+    total: 87
+  review_notes: 非常适合作为企业知识入库前置模块，但要提醒“转换≠审计/脱敏”。
+- id: litellm
+  name: BerriAI/litellm
+  url: https://github.com/BerriAI/litellm
+  license: MIT core; enterprise/ directory separately licensed
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  scenarios:
+  - r-and-d
+  - operations-admin
+  capabilities:
+  - llm-gateway
+  - provider-routing
+  - cost-tracking
+  - guardrails
+  - logging
+  roles:
+  - AI 平台运维
+  - 模型网关负责人
+  - 成本治理负责人
+  value_summary: 当你手里不止一家模型供应商，还想统一路由、记日志、控预算时，它很实用。问题是密钥会更集中，所以平台权限要更严。
+  best_for:
+  - 多模型供应商接入统一出口
+  - 需要做路由、日志、预算和策略控制的团队
+  not_for:
+  - 没有密钥治理能力却把所有供应商接进同一层
+  - 忽略 enterprise 目录的单独许可边界
+  risk_level: medium
+  risks:
+  - 会集中管理 API key、日志与路由策略，平台权限必须严格控制
+  - 根 LICENSE 明确 enterprise/ 目录另有许可证，复用时不能一概按 MIT 理解
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库；2026-05-31 GitHub API 显示 48,799 stars，根 LICENSE 前言写明 core 为 MIT，enterprise/ 目录单独授权。
+  score:
+    ranking_growth: 26
+    usefulness: 28
+    reproducibility: 14
+    safety: 8
+    communication: 9
+    total: 85
+  review_notes: 可收录，但要把“集中密钥与日志”的平台风险单独讲清楚。
+- id: mem0
+  name: mem0ai/mem0
+  url: https://github.com/mem0ai/mem0
+  license: Apache-2.0
+  source_type: github_repo
+  first_seen: '2026-05-31'
+  last_verified: '2026-05-31'
+  status: verified_public
+  scenarios:
+  - office
+  - customer-service
+  - operations-admin
+  capabilities:
+  - agent-memory
+  - profile-memory
+  - state-management
+  - knowledge-recall
+  roles:
+  - 客服系统负责人
+  - 内部助手产品经理
+  - 用户记忆/个性化负责人
+  value_summary: 如果你的助手老是前后失忆，或者客服每轮都像第一次接触用户，可以研究它。但记得先把保留期、删除和纠错机制想清楚。
+  best_for:
+  - 客服/助理型代理的上下文保持
+  - 需要多轮连续性和偏好记忆的内部助手
+  not_for:
+  - 不设 retention 与删除策略就存用户数据
+  - 把长期记忆当成可以无限采集的黑盒
+  risk_level: medium
+  risks:
+  - 长期记忆天然涉及 PII、偏好和历史行为，需要 retention 与删除机制
+  - 记错或过期记忆会直接污染后续输出
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 57,170 stars，README 描述为 AI agents 的 universal memory layer。
+  score:
+    ranking_growth: 27
+    usefulness: 26
+    reproducibility: 14
+    safety: 6
+    communication: 9
+    total: 82
+  review_notes: 很适合作为“记忆层”条目，但合规风险要比普通 prompt/skill 更高。
