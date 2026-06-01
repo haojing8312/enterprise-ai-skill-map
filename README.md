@@ -1,95 +1,74 @@
 # Enterprise AI Skill Map
 
-企业级 AI 数字员工 Skill 知识库。
+帮企业、出海团队和超级个体快速找到可落地的 AI Skill / Agent / 自动化工作流。
 
-这个仓库不是普通工具收藏夹，而是把公开可用的 AI Skill、Agent Workflow、Prompt/Automation 模板，整理成一套可以给企业试点、培训、咨询和产品推荐器复用的数据资产。
+这个仓库不追求“把所有工具都列出来”，而是帮你回答一个更实际的问题：
 
-## 现在怎么找
+> 我现在有一个业务目标，应该先用哪些 Skill？怎么组合？风险在哪里？
 
-优先按两个入口找：
+## 5 秒开始
 
-1. **按行业找**：先判断企业所处行业/业务环境，再看适合先试点的岗位。见 [`industries/`](industries/)。
-2. **按岗位找**：先判断谁要用、谁验收、谁承担风险，再看可组合的 Skill。见 [`roles/`](roles/)。
+| 你现在的目标 | 直接看这里 |
+|---|---|
+| 我是出海公司，要做 GEO / SEO / 内容增长 | [`tracks/overseas-geo-marketing.md`](tracks/overseas-geo-marketing.md) |
+| 我要做营销自动化和线索获取 | [`tracks/marketing-automation.md`](tracks/marketing-automation.md) |
+| 我要搭内容生产与分发系统 | [`tracks/content-engine.md`](tracks/content-engine.md) |
+| 我要给研发团队上 AI 编码流程 | [`tracks/ai-coding-workflow.md`](tracks/ai-coding-workflow.md) |
+| 我要连接 Gmail / Slack / Apollo / GSC 等应用 | [`app-automations/README.md`](app-automations/README.md) |
+| 我第一次来，只想看推荐路线 | [`START_HERE.md`](START_HERE.md) |
 
-场景页 [`scenarios/`](scenarios/) 保留为第三层：它回答“这个岗位在具体流程里怎么用”。
+## 推荐路线
 
-## 这个库解决什么问题
+1. **出海 GEO / SEO 内容增长**：公开信号监控、竞品内容、搜索表现、Newsletter、内容阵地。  
+   → [`tracks/overseas-geo-marketing.md`](tracks/overseas-geo-marketing.md)
 
-企业想落地 AI 数字员工时，最常见的问题不是“有没有工具”，而是：
+2. **营销自动化与线索获取**：表单、CRM、邮件、社媒、报表、审批流。  
+   → [`tracks/marketing-automation.md`](tracks/marketing-automation.md)
 
-- 某个行业里，哪些岗位最适合先试点？
-- 某个岗位到底能用什么 Skill？
-- 这些 Skill 适合办公、财税、法务、销售、客服、研发还是内容运营？
-- 哪些可以安全公开推荐，哪些只能内部试验？
-- 一个 Skill 是单点能力，还是能组合成数字员工工作流？
-- 它的边界在哪里，不能被夸大成什么？
+3. **内容生产与分发系统**：选题、研究、写作、发布、复盘。  
+   → [`tracks/content-engine.md`](tracks/content-engine.md)
 
-本仓库按 **行业 → 岗位 → 场景 → Skill → 风险边界 → 工作流组合** 来整理。
+4. **AI 编码与研发效能**：AI 写码、测试、审查、排障、发布检查。  
+   → [`tracks/ai-coding-workflow.md`](tracks/ai-coding-workflow.md)
 
-## 目录结构
+## 核心入口
 
 ```text
-├── industries/                   # 按行业入口：通用企业、软件互联网、AI 基础设施、内容媒体等
-├── roles/                        # 按岗位入口：研发、AI 平台、内容、客服、法务、知识库等
-├── scenarios/                    # 按企业场景入口：研发、办公、客服、内容、法务等
-├── docs/
-│   └── industry-role-matrix.md   # 行业 × 岗位总矩阵
-├── taxonomy.md                   # 分类体系说明
-├── data/
-│   ├── skills.yaml               # 结构化 Skill 总表，含 industries / role_groups / scenarios
-│   ├── classification.yaml       # 行业与岗位分类定义
-│   ├── sources.yaml              # 监控来源/榜单来源
-│   └── scoring-rules.md          # 收录评分规则
-├── workflows/                    # 数字员工工作流样板
-├── templates/                    # 新增条目模板
-└── reports/skill-research/       # 首批 Skill 研究与分类报告
+tracks/            按业务目标找：出海增长、营销自动化、内容系统、AI 编码
+categories/        按能力找：增长、内容/GEO、自动化、研究监控、研发等
+app-automations/   按外部应用找：Gmail、Slack、Apollo、GSC、LinkedIn、X 等
+skills/            单个 Skill 人话卡片：适合谁、解决什么、风险边界
+data/              机器可读 YAML 数据源
+reports/           每日 Skill 早报和研究归档
 ```
 
-## 当前优先行业
+## 热门 Skill 卡片
 
-V0.1 先覆盖这些入口：
+- [`n8n`](skills/n8n.md)：营销 Ops / 增长流程编排
+- [`Activepieces`](skills/activepieces.md)：开源自动化连接层
+- [`RSSHub`](skills/rsshub.md)：公开信号订阅与竞品监控
+- [`Ghost`](skills/ghost.md)：内容阵地、Newsletter、会员
+- [`Plausible Analytics`](skills/plausible-analytics.md)：隐私友好的网站分析
 
-1. 软件/互联网/研发组织：AI 写码、测试、排障、发布检查
-2. AI/数据基础设施团队：模型服务、推理网关、本地部署、成本治理
-3. 内容/媒体/营销服务：选题、写作、图文、分发、复盘
-4. 通用企业/内部运营：文档、知识库、客服、流程和权限管理
-5. 咨询/培训/知识服务：把 Skill 变成课程、陪跑、工作坊和方案库
+## Skill 卡片怎么看
 
-医疗、制造、金融、政企等行业先保留入口，后续必须用真实流程和公开样本补齐，不能空喊“行业解决方案”。
+每张卡片只回答 6 件事：
 
-## 当前优先岗位
-
-- 研发/技术负责人：AI 编码流程、测试、验收、代码审查
-- AI 平台工程师：模型服务、MCP、网关、权限和成本
-- 内容/市场运营：研究、写作、视觉、分发、复盘
-- 知识库运营：资料转换、沉淀、检索和复用
-- 客服/客户成功：FAQ、工单、用户记忆、实施手册
-- 法务/合规：合同、隐私、权限、对外表述风险提示
+1. 适合谁
+2. 解决什么问题
+3. 推荐用法
+4. 不适合什么
+5. 风险边界
+6. 来源 / License / 验证状态
 
 ## 收录原则
 
-一个 Skill 进入本库前，至少要回答：
+只收录公开、可验证、能落地的 Skill / Agent / Workflow。  
+不收录需要泄露密钥、Cookie、客户数据、私有仓库，或明显用于骚扰、刷量、绕过平台限制、数据窃取的方案。
 
-- 它适合哪个行业？
-- 它适合哪个岗位或数字员工角色？
-- 它解决哪个企业场景的具体问题？
-- 它有没有公开来源、License、README 或示例？
-- 它有没有安全风险？
-- 它有没有被过度宣传？
+## 给维护者
 
-不收录：
-
-- 需要泄露密钥、Cookie、客户数据或私有仓库的方案
-- 明显用于绕过平台限制、批量骚扰、数据窃取的方案
-- 只有概念、没有可验证来源的“神器”
-- 把辅助工具包装成“接上就能自治”的夸大表述
-
-## Release & Maintenance
-
-- Changelog: [`CHANGELOG.md`](CHANGELOG.md)
-- 维护规则: [`MAINTENANCE.md`](MAINTENANCE.md)
-- 维护节奏：每日检查、每周复核、每月整理一次公开快照
-
-## License
-
-MIT
+- 原 README 已备份到 [`docs/legacy-readme-before-route-navigation.md`](docs/legacy-readme-before-route-navigation.md)
+- 重构说明见 [`docs/repo-structure-redesign.md`](docs/repo-structure-redesign.md)
+- 结构化数据见 [`data/skills.yaml`](data/skills.yaml)
+- 分类说明保留在 [`taxonomy.md`](taxonomy.md)
