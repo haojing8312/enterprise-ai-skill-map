@@ -2066,3 +2066,318 @@ skills:
   review_notes: 来自 2026-06-01 营销 / 出海增长 Skill 早报，已去重归档；对外使用需保留人工审核与安全边界。
   source_url: https://github.com/RSSNext/RSSHub
   verification_status: verified_public
+- id: firecrawl
+  name: Firecrawl
+  url: https://github.com/firecrawl/firecrawl
+  license: AGPL-3.0
+  source_type: github_repo
+  status: verified_public
+  industries:
+  - software-internet
+  - content-media
+  - retail-ecommerce
+  - consulting-training
+  scenarios:
+  - geo-seo-growth
+  - market-intelligence
+  - content-marketing
+  - sales-growth
+  role_groups:
+  - geo-seo-growth
+  - content-marketing
+  - market-intelligence
+  - growth-engineering
+  capabilities:
+  - web-search
+  - web-scraping
+  - html-to-markdown
+  - competitive-research
+  - ai-data-pipeline
+  roles:
+  - 出海 SEO/GEO 负责人
+  - 内容增长负责人
+  - 市场研究负责人
+  value_summary: 把公开网页和搜索结果变成 LLM 更好读的 Markdown/结构化数据，适合做 GEO/SEO 研究、竞品页面整理和内容差距分析。
+  copy: 给做出海 SEO/GEO 的人用：先把公开网页转成模型能读的材料，再写 brief、做对比、找内容缺口；别拿它绕过 robots、登录墙或付费墙。
+  best_for:
+  - 公开网页的 SEO/GEO 研究
+  - 竞品落地页和文档转 Markdown
+  - 内容策略和市场情报的数据准备
+  not_for:
+  - 绕过付费墙、登录墙或平台限制
+  - 采集个人敏感信息或受限数据
+  - 不愿承担 AGPL 网络服务义务的闭源商用嵌入
+  risk_level: medium-high
+  risks:
+  - 网页抓取需遵守 robots.txt、网站 ToS、隐私政策和当地法规
+  - AGPL-3.0 对网络服务与衍生部署有强 copyleft 义务
+  - 大规模抓取可能触发封禁、法律或品牌风险
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库；README 展示 Search、Scrape、Crawl/Interact/Agent 等能力；主许可证 AGPL-3.0。
+  - type: verification
+    note: 2026-06-02 raw README/LICENSE 已抽检；研究分 87。
+  score:
+    ranking_growth: 29
+    usefulness: 27
+    reproducibility: 13
+    safety: 9
+    communication: 9
+    total: 87
+  review_notes: 适合做出海 GEO/SEO 采集层；必须把公开来源、robots/ToS 与隐私边界写在推荐里。
+  source_url: https://github.com/firecrawl/firecrawl
+  verification_status: verified_public_github_readme_license_2026-06-02
+  first_seen: '2026-06-02'
+  last_verified: '2026-06-02'
+- id: postiz
+  name: Postiz
+  url: https://github.com/gitroomhq/postiz-app
+  license: AGPL-3.0
+  source_type: github_repo
+  status: verified_public
+  industries:
+  - content-media
+  - software-internet
+  - retail-ecommerce
+  - creator-economy
+  scenarios:
+  - social-media-growth
+  - content-marketing
+  - overseas-branding
+  - marketing-ops
+  role_groups:
+  - community-social
+  - content-marketing
+  - growth
+  - founder-overseas-lead
+  capabilities:
+  - social-media-scheduling
+  - content-calendar
+  - multi-account-workflow
+  - docker-deployment
+  - agentic-social-posting
+  roles:
+  - 海外社媒负责人
+  - 内容运营负责人
+  - 创始人营销负责人
+  value_summary: 开源/自托管的社媒排期和内容日历工具，适合把 AI 草稿接到人工审核后的发布队列里。
+  copy: 给做 LinkedIn、X 和多平台社媒的人用：AI 先写草稿，人确认后再排期；别把它当刷量或自动增长机器。
+  best_for:
+  - 海外社媒内容日历
+  - 小团队自托管排期工具
+  - AI 草稿进入人工审核后的发布队列
+  not_for:
+  - 黑帽刷量、垃圾营销或平台规避
+  - 不愿处理平台 OAuth/API 政策变化的团队
+  - 闭源商用嵌入但不接受 AGPL 义务的产品
+  risk_level: medium
+  risks:
+  - 社媒平台 API/ToS 经常变化，自动化发布要控制频率和权限
+  - AGPL-3.0 对网络部署和衍生服务有披露义务
+  - 内容合规、品牌安全、版权与虚假宣传需人工审核
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库；README/仓库定位为 agentic social media scheduling tool；许可证 AGPL-3.0。
+  - type: social
+    note: 公开 HN / GitHub Search 信号显示开发者传播明显；2026-06-02 研究分 85。
+  score:
+    ranking_growth: 27
+    usefulness: 26
+    reproducibility: 13
+    safety: 10
+    communication: 9
+    total: 85
+  review_notes: 可推荐为社媒排期中台；表达上必须强调人工审核、官方账号授权和平台规则。
+  source_url: https://github.com/gitroomhq/postiz-app
+  verification_status: verified_public_github_readme_license_2026-06-02
+  first_seen: '2026-06-02'
+  last_verified: '2026-06-02'
+- id: twenty
+  name: Twenty
+  url: https://github.com/twentyhq/twenty
+  license: GPL with Enterprise-marked files / commercial-license exceptions
+  source_type: github_repo
+  status: verified_public
+  industries:
+  - software-internet
+  - b2b-sales
+  - consulting-training
+  - professional-services
+  scenarios:
+  - lead-generation
+  - sales-crm
+  - revops
+  - customer-success
+  role_groups:
+  - sales-crm
+  - lead-generation
+  - growth
+  - revops
+  capabilities:
+  - crm
+  - pipeline-management
+  - self-host
+  - graphql-api
+  - ai-ready-data-layer
+  roles:
+  - B2B 销售负责人
+  - 增长负责人
+  - RevOps 负责人
+  value_summary: 开源 CRM 候选，适合把海外线索、客户资料和跟进记录放进可控系统里，再给 AI 销售助手提供结构化上下文。
+  copy: 给 B2B 出海团队用：别让线索散在表格和聊天记录里，先放进一个可控 CRM；涉及联系人数据，权限和保留策略要先定。
+  best_for:
+  - B2B 海外线索管理
+  - 从表格迁移到可自托管 CRM
+  - 和自动化工具、AI agent、销售流程对接
+  not_for:
+  - 需要完整 Salesforce 生态且零定制的团队
+  - 没有数据权限/PII 管理能力的团队
+  - 无法审查 Enterprise 文件/商业条款的闭源商用场景
+  risk_level: medium
+  risks:
+  - CRM 涉及联系人、公司、沟通记录等 PII/商业敏感数据，需权限、加密、备份和保留策略
+  - LICENSE 提示部分 Enterprise 标记文件不在 GPL 类许可内
+  - 自托管需要数据库、备份、升级和安全运维
+  evidence:
+  - type: github
+    note: '公开 GitHub 仓库；README 标题为 The #1 Open-Source CRM；License 提到 GPL 主体与 Enterprise 标记文件。'
+  - type: verification
+    note: 2026-06-02 raw README/LICENSE 已抽检；研究分 84。
+  score:
+    ranking_growth: 27
+    usefulness: 27
+    reproducibility: 12
+    safety: 10
+    communication: 8
+    total: 84
+  review_notes: 适合入库为 AI 销售/线索数据底座；推荐时需提示 PII 和混合许可风险。
+  source_url: https://github.com/twentyhq/twenty
+  verification_status: verified_public_github_readme_license_2026-06-02
+  first_seen: '2026-06-02'
+  last_verified: '2026-06-02'
+- id: mautic
+  name: Mautic
+  url: https://github.com/mautic/mautic
+  license: GPL-3.0-or-later
+  source_type: github_repo
+  status: verified_public
+  industries:
+  - b2b-marketing
+  - software-internet
+  - retail-ecommerce
+  - professional-services
+  scenarios:
+  - marketing-automation
+  - email-marketing
+  - lead-nurturing
+  - lifecycle-marketing
+  role_groups:
+  - marketing-ops
+  - demand-gen
+  - growth
+  - crm-ops
+  capabilities:
+  - marketing-automation
+  - email-campaigns
+  - lead-scoring
+  - campaign-workflows
+  - self-host
+  roles:
+  - 营销自动化负责人
+  - Demand Gen 负责人
+  - 生命周期运营负责人
+  value_summary: 成熟的开源营销自动化软件，适合邮件培育、线索评分、活动流程和自托管 MarTech 栈。
+  copy: 给有合规线索池的团队用：表单进来之后，邮件培育、分层触达、活动跟进可以放进一套流程；冷邮件和退订规则别省。
+  best_for:
+  - 自托管邮件/营销自动化
+  - 合规线索池的培育与分层触达
+  - 希望减少对商业营销云依赖的团队
+  not_for:
+  - 未经许可的冷邮件群发
+  - 没有邮件送达率、退订、隐私合规运营能力的团队
+  - 直接拿 GitHub main 分支跑生产的团队
+  risk_level: medium
+  risks:
+  - 邮件营销必须遵守同意、退订、发件人身份、GDPR/CAN-SPAM/当地隐私法规
+  - README 提醒 GitHub 源码更适合开发/测试，生产建议 Composer 或打包版本
+  - 营销数据涉及 PII，需要权限、审计和数据保留策略
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库；README 写明 Open Source Marketing Automation Software；许可证 GPL-3.0-or-later。
+  - type: verification
+    note: 2026-06-02 raw README/LICENSE 已抽检；研究分 82。
+  score:
+    ranking_growth: 26
+    usefulness: 27
+    reproducibility: 10
+    safety: 11
+    communication: 8
+    total: 82
+  review_notes: 与营销主题高度贴合；需提醒生产安装路径、邮件合规和 PII 管理。
+  source_url: https://github.com/mautic/mautic
+  verification_status: verified_public_github_readme_license_2026-06-02
+  first_seen: '2026-06-02'
+  last_verified: '2026-06-02'
+- id: growthbook
+  name: GrowthBook
+  url: https://github.com/growthbook/growthbook
+  license: MIT + GrowthBook Enterprise License for marked portions
+  source_type: github_repo
+  status: verified_public
+  industries:
+  - software-internet
+  - b2b-saas
+  - retail-ecommerce
+  - product-led-growth
+  scenarios:
+  - growth-experiment
+  - ab-testing
+  - feature-flag
+  - product-analytics
+  role_groups:
+  - growth
+  - product-research
+  - data-analytics
+  - product-management
+  capabilities:
+  - feature-flags
+  - ab-testing
+  - experimentation
+  - product-analytics
+  - self-host
+  roles:
+  - 增长负责人
+  - 产品经理
+  - 数据分析负责人
+  value_summary: 把增长假设放进可跟踪的实验系统里：Feature Flag、A/B 测试和结果分析适合用来验证落地页、功能和转化路径。
+  copy: 给做增长实验的团队用：别只靠感觉改落地页和功能，把假设、分组、指标先写清楚；测试结果也别离开样本量和隐私边界解读。
+  best_for:
+  - 落地页和转化路径 A/B 测试
+  - 功能开关和产品实验
+  - 产品分析与增长假设验证
+  not_for:
+  - 用小样本硬下结论
+  - 隐私告知不足的数据实验
+  - 无法接受企业许可例外的闭源嵌入
+  risk_level: medium
+  risks:
+  - 实验需要样本量、统计口径和伦理边界，不能把结果当绝对真相
+  - 涉及用户行为数据时需隐私告知、权限和保留策略
+  - 部分目录采用 GrowthBook Enterprise License，商用集成需审查
+  evidence:
+  - type: github
+    note: 公开 GitHub 仓库；README 写 Open Source Feature Flags, Experimentation, and Product Analytics；LICENSE 含 Enterprise 目录说明。
+  - type: social
+    note: GitHub Search/HN 显示增长实验方向公开传播；2026-06-02 评分 83。
+  score:
+    ranking_growth: 26
+    usefulness: 27
+    reproducibility: 12
+    safety: 10
+    communication: 8
+    total: 83
+  review_notes: 适合作为增长实验层；推荐中要避免“实验一定提升转化”的效果承诺。
+  source_url: https://github.com/growthbook/growthbook
+  verification_status: verified_public_github_readme_license_2026-06-02
+  first_seen: '2026-06-02'
+  last_verified: '2026-06-02'
