@@ -8,7 +8,7 @@
 行业 industry → 岗位 role → 场景 scenario → Skill → 风险边界 → 工作流组合
 ```
 
-当前已收录 Skill：34 个。
+当前已收录 Skill：39 个。
 
 ## 一级：行业 Industry
 

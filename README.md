@@ -17,22 +17,22 @@
 | 我要连接 Gmail / Slack / Apollo / GSC 等应用 | [`app-automations/README.md`](app-automations/README.md) |
 | 我第一次来，只想看推荐路线 | [`START_HERE.md`](START_HERE.md) |
 
-## Skill 类型目录（先看这个）
+## 行业目录（先看这个）
 
-如果你还不知道自己要找哪条业务路线，可以先按 Skill 类型扫一遍：
+如果你还不知道自己要找哪条业务路线，可以先按企业里的**行业 + 岗位**扫一遍：
 
-| Skill 类型 | 适合先看的人 | 代表条目 |
-|---|---|---|
-| [AI 编码与研发流程](categories/README.md#1-ai-编码与研发流程5-个) | 研发负责人、AI 编码流程设计者 | Codex、OpenCode、Superpowers |
-| [Agent / 多智能体编排](categories/README.md#2-agent--多智能体编排5-个) | 数字员工架构师、工作流设计者 | OpenAI Agents SDK、Harness、Trigger.dev |
-| [MCP / 工具连接器](categories/README.md#3-mcp--工具连接器6-个) | AI 平台、系统集成负责人 | MCP Servers、FastMCP、GitHub MCP Server |
-| [浏览器自动化 / 网页采集](categories/README.md#4-浏览器自动化--网页采集5-个) | 运营自动化、QA、增长团队 | Playwright MCP、browser-use、Crawlee |
-| [内容研究 / 知识库 / 文档处理](categories/README.md#5-内容研究--知识库--文档处理5-个) | 研究员、内容团队、知识库运营 | Open Deep Research、MarkItDown、Claude Skills |
-| [出海营销 / 内容增长](categories/README.md#6-出海营销--内容增长5-个) | 出海公司、内容增长、营销 Ops | n8n、RSSHub、Ghost、Plausible |
-| [模型基础设施 / 网关](categories/README.md#7-模型基础设施--网关4-个) | AI 平台、推理服务、成本治理 | llama.cpp、vLLM、LiteLLM、TensorZero |
-| [企业 AI 治理 / 观测 / 安全](categories/README.md#8-企业-ai-治理--观测--安全4-个) | 安全、平台治理、LLMOps | MLflow、OpenLIT、mem0、Casdoor |
+| 行业 | 当前 Skill | 适合先看的岗位 |
+|---|---:|---|
+| [通用企业/内部运营](industries/general-enterprise.md) | 18 | 知识库运营 / 运营/行政/流程管理员 / 客服/客户成功负责人 |
+| [软件/互联网/研发组织](industries/software-internet.md) | 29 | 开发工程师 / 技术负责人/研发效能负责人 / QA/测试负责人 |
+| [AI/数据基础设施团队](industries/ai-infrastructure.md) | 16 | AI 平台工程师 / 基础设施/运维负责人 / 成本治理负责人 |
+| [内容/媒体/营销服务](industries/content-media.md) | 13 | 内容/市场运营负责人 / 内容研究助理 / 知识库运营 |
+| [零售/电商/客服密集型](industries/retail-ecommerce.md) | 11 | 客服/客户成功负责人 / 运营自动化负责人 / 内容/市场运营负责人 |
+| [咨询/培训/知识服务](industries/consulting-training.md) | 8 | 策略/行业研究员 / 解决方案/交付架构师 / 数字员工/Skill 设计师 |
+| [专业服务：法律/咨询/研究](industries/professional-services.md) | 7 | 法务/合规负责人 / 文档处理专员 / 策略/行业研究员 |
+| [政企/国企/内网场景](industries/government-stateowned.md) | 2 | AI 平台工程师 / 基础设施/运维负责人 / 运营/行政/流程管理员 |
 
-→ 完整目录见 [`categories/README.md`](categories/README.md)。
+→ 也可以直接按岗位进：[`roles/README.md`](roles/README.md)
 
 ## 推荐路线
 
@@ -52,7 +52,8 @@
 
 ```text
 tracks/            按业务目标找：出海增长、营销自动化、内容系统、AI 编码
-categories/        按 Skill 类型找：AI 编码、MCP、浏览器自动化、内容研究、营销增长、治理等
+industries/        按行业找：通用企业 / 互联网 / 内容媒体 / 零售电商 / 政企等
+roles/             按岗位找：研发 / AI 平台 / 运营自动化 / 内容 / 成本治理等
 app-automations/   按外部应用找：Gmail、Slack、Apollo、GSC、LinkedIn、X 等
 skills/            单个 Skill 人话卡片：适合谁、解决什么、风险边界
 data/              机器可读 YAML 数据源
