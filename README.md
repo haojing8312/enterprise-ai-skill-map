@@ -17,6 +17,23 @@
 | 我要连接 Gmail / Slack / Apollo / GSC 等应用 | [`app-automations/README.md`](app-automations/README.md) |
 | 我第一次来，只想看推荐路线 | [`START_HERE.md`](START_HERE.md) |
 
+## Skill 类型目录（先看这个）
+
+如果你还不知道自己要找哪条业务路线，可以先按 Skill 类型扫一遍：
+
+| Skill 类型 | 适合先看的人 | 代表条目 |
+|---|---|---|
+| [AI 编码与研发流程](categories/README.md#1-ai-编码与研发流程5-个) | 研发负责人、AI 编码流程设计者 | Codex、OpenCode、Superpowers |
+| [Agent / 多智能体编排](categories/README.md#2-agent--多智能体编排5-个) | 数字员工架构师、工作流设计者 | OpenAI Agents SDK、Harness、Trigger.dev |
+| [MCP / 工具连接器](categories/README.md#3-mcp--工具连接器6-个) | AI 平台、系统集成负责人 | MCP Servers、FastMCP、GitHub MCP Server |
+| [浏览器自动化 / 网页采集](categories/README.md#4-浏览器自动化--网页采集5-个) | 运营自动化、QA、增长团队 | Playwright MCP、browser-use、Crawlee |
+| [内容研究 / 知识库 / 文档处理](categories/README.md#5-内容研究--知识库--文档处理5-个) | 研究员、内容团队、知识库运营 | Open Deep Research、MarkItDown、Claude Skills |
+| [出海营销 / 内容增长](categories/README.md#6-出海营销--内容增长5-个) | 出海公司、内容增长、营销 Ops | n8n、RSSHub、Ghost、Plausible |
+| [模型基础设施 / 网关](categories/README.md#7-模型基础设施--网关4-个) | AI 平台、推理服务、成本治理 | llama.cpp、vLLM、LiteLLM、TensorZero |
+| [企业 AI 治理 / 观测 / 安全](categories/README.md#8-企业-ai-治理--观测--安全4-个) | 安全、平台治理、LLMOps | MLflow、OpenLIT、mem0、Casdoor |
+
+→ 完整目录见 [`categories/README.md`](categories/README.md)。
+
 ## 推荐路线
 
 1. **出海 GEO / SEO 内容增长**：公开信号监控、竞品内容、搜索表现、Newsletter、内容阵地。  
@@ -35,7 +52,7 @@
 
 ```text
 tracks/            按业务目标找：出海增长、营销自动化、内容系统、AI 编码
-categories/        按能力找：增长、内容/GEO、自动化、研究监控、研发等
+categories/        按 Skill 类型找：AI 编码、MCP、浏览器自动化、内容研究、营销增长、治理等
 app-automations/   按外部应用找：Gmail、Slack、Apollo、GSC、LinkedIn、X 等
 skills/            单个 Skill 人话卡片：适合谁、解决什么、风险边界
 data/              机器可读 YAML 数据源
