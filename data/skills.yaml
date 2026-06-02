@@ -89,7 +89,8 @@ skills:
   - 生成代码仍需人工测试与审阅
   evidence:
   - type: github
-    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 87,167 stars，README 描述为 terminal coding agent。
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 87,167 stars，README 描述为
+      terminal coding agent。
   score:
     ranking_growth: 29
     usefulness: 29
@@ -193,7 +194,8 @@ skills:
   - 本地部署会引入硬件、性能和维护成本
   evidence:
   - type: github
-    note: 公开 GitHub 仓库，MIT；2026-05-31 GitHub API 显示 113,893 stars，README 描述为 C/C++ LLM inference。
+    note: 公开 GitHub 仓库，MIT；2026-05-31 GitHub API 显示 113,893 stars，README 描述为 C/C++
+      LLM inference。
   score:
     ranking_growth: 29
     usefulness: 27
@@ -299,7 +301,8 @@ skills:
   - LICENSE 正在从 MIT 过渡到 Apache-2.0，需要记录复合许可边界
   evidence:
   - type: github
-    note: 公开 GitHub 仓库；2026-05-31 GitHub API 显示 86,494 stars，LICENSE 首段明确处于 MIT→Apache-2.0 迁移期，文档为 CC-BY-4.0。
+    note: 公开 GitHub 仓库；2026-05-31 GitHub API 显示 86,494 stars，LICENSE 首段明确处于 MIT→Apache-2.0
+      迁移期，文档为 CC-BY-4.0。
   score:
     ranking_growth: 28
     usefulness: 28
@@ -350,7 +353,8 @@ skills:
   - 需要明确哪些代理只能读、哪些代理能写或发评论
   evidence:
   - type: github
-    note: 公开 GitHub 仓库，MIT；2026-05-31 GitHub API 显示 30,299 stars，README 描述为 GitHub official MCP server。
+    note: 公开 GitHub 仓库，MIT；2026-05-31 GitHub API 显示 30,299 stars，README 描述为 GitHub
+      official MCP server。
   score:
     ranking_growth: 25
     usefulness: 27
@@ -458,7 +462,8 @@ skills:
   - 一次性装太多 skill 会明显增加上下文负担
   evidence:
   - type: github
-    note: 公开 GitHub 仓库，MIT；2026-05-31 GitHub API 显示 16,646 stars，README 声称覆盖 300+ skills/agents/plugins。
+    note: 公开 GitHub 仓库，MIT；2026-05-31 GitHub API 显示 16,646 stars，README 声称覆盖 300+
+      skills/agents/plugins。
   score:
     ranking_growth: 23
     usefulness: 25
@@ -508,7 +513,8 @@ skills:
   - 即使 README 提供安装方式，也不等于获得明确再分发权利
   evidence:
   - type: github
-    note: 公开 GitHub 仓库；2026-05-31 GitHub API 显示 19,961 stars，但 license 接口 404，README 仅说明安装方式，未给出明确 LICENSE。
+    note: 公开 GitHub 仓库；2026-05-31 GitHub API 显示 19,961 stars，但 license 接口 404，README
+      仅说明安装方式，未给出明确 LICENSE。
   score:
     ranking_growth: 24
     usefulness: 24
@@ -669,7 +675,8 @@ skills:
   - 格式转换会有信息损失或结构偏差，需要人工抽检
   evidence:
   - type: github
-    note: 公开 GitHub 仓库，MIT；2026-05-31 GitHub API 显示 132,964 stars，README 描述为 Office/PDF to Markdown 工具。
+    note: 公开 GitHub 仓库，MIT；2026-05-31 GitHub API 显示 132,964 stars，README 描述为 Office/PDF
+      to Markdown 工具。
   score:
     ranking_growth: 29
     usefulness: 27
@@ -722,7 +729,8 @@ skills:
   - 根 LICENSE 明确 enterprise/ 目录另有许可证，复用时不能一概按 MIT 理解
   evidence:
   - type: github
-    note: 公开 GitHub 仓库；2026-05-31 GitHub API 显示 48,799 stars，根 LICENSE 前言写明 core 为 MIT，enterprise/ 目录单独授权。
+    note: 公开 GitHub 仓库；2026-05-31 GitHub API 显示 48,799 stars，根 LICENSE 前言写明 core 为
+      MIT，enterprise/ 目录单独授权。
   score:
     ranking_growth: 26
     usefulness: 28
@@ -775,7 +783,8 @@ skills:
   - 记错或过期记忆会直接污染后续输出
   evidence:
   - type: github
-    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 57,170 stars，README 描述为 AI agents 的 universal memory layer。
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 57,170 stars，README 描述为
+      AI agents 的 universal memory layer。
   score:
     ranking_growth: 27
     usefulness: 26
@@ -934,7 +943,8 @@ skills:
   - 外部模型调用要明确数据出境与留存边界
   evidence:
   - type: github
-    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 104,774 stars，README 含 Installation。
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 104,774 stars，README 含
+      Installation。
   score:
     ranking_growth: 30
     usefulness: 28
@@ -1036,7 +1046,8 @@ skills:
   - 专业领域技能需要行业专家复核，不能只靠 README 宣传口径
   evidence:
   - type: github
-    note: 公开 GitHub 仓库，MIT；2026-05-31 GitHub API 显示 26,687 stars，README 含 Getting Started。
+    note: 公开 GitHub 仓库，MIT；2026-05-31 GitHub API 显示 26,687 stars，README 含 Getting
+      Started。
   score:
     ranking_growth: 27
     usefulness: 24
@@ -1088,7 +1099,8 @@ skills:
   - 企业应用集成一旦连到内部系统，必须先划清工具访问权限和日志策略
   evidence:
   - type: github
-    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 465 stars，README 含 Quick Start。
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 465 stars，README 含 Quick
+      Start。
   score:
     ranking_growth: 18
     usefulness: 25
@@ -1141,7 +1153,8 @@ skills:
   - 收录项目质量参差不齐，必须逐项复核权限边界、维护状态和许可证
   evidence:
   - type: github
-    note: 公开 GitHub 仓库，MIT；2026-05-31 GitHub API 显示 88,223 stars，README 为 MCP server collection。
+    note: 公开 GitHub 仓库，MIT；2026-05-31 GitHub API 显示 88,223 stars，README 为 MCP server
+      collection。
   score:
     ranking_growth: 29
     usefulness: 27
@@ -1193,7 +1206,8 @@ skills:
   - 工具服务一旦连到内部系统，必须补齐认证、审计和最小权限设计
   evidence:
   - type: github
-    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 25,410 stars，README 强调 build MCP servers and clients。
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 25,410 stars，README 强调
+      build MCP servers and clients。
   score:
     ranking_growth: 28
     usefulness: 28
@@ -1246,7 +1260,8 @@ skills:
   - 数据库连接器涉及敏感数据和写权限，必须先做权限、审计和脱敏策略
   evidence:
   - type: github
-    note: '公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 15,397 stars，README 含 Quick Start: Prebuilt Tools。'
+    note: '公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 15,397 stars，README 含
+      Quick Start: Prebuilt Tools。'
   score:
     ranking_growth: 26
     usefulness: 29
@@ -1297,7 +1312,8 @@ skills:
   - 依赖 Figma access token，设计资产和客户界面稿可能包含未公开信息
   evidence:
   - type: github
-    note: 公开 GitHub 仓库，MIT；2026-05-31 GitHub API 显示 14,925 stars，README 提示需创建 Figma access token。
+    note: 公开 GitHub 仓库，MIT；2026-05-31 GitHub API 显示 14,925 stars，README 提示需创建 Figma
+      access token。
   score:
     ranking_growth: 26
     usefulness: 25
@@ -1350,7 +1366,8 @@ skills:
   - IAM 一旦配置错误，影响面远大于普通工具；必须经过安全评审与分阶段接入
   evidence:
   - type: github
-    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 13,692 stars，README 含 Quick start。
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 13,692 stars，README 含 Quick
+      start。
   score:
     ranking_growth: 25
     usefulness: 28
@@ -1509,7 +1526,8 @@ skills:
   - 依赖浏览器扩展和自带 API key，存在页面数据暴露和操作误触风险
   evidence:
   - type: github
-    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 13,060 stars，README 含 Quick Start。
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 13,060 stars，README 含 Quick
+      Start。
   score:
     ranking_growth: 25
     usefulness: 25
@@ -1561,7 +1579,8 @@ skills:
   - 观测平台会汇集 prompt、trace、调用数据，必须处理脱敏与留存策略
   evidence:
   - type: github
-    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 2,479 stars，README 含 Getting Started with LLM Observability。
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 2,479 stars，README 含 Getting
+      Started with LLM Observability。
   score:
     ranking_growth: 20
     usefulness: 28
@@ -1614,7 +1633,8 @@ skills:
   - 调度平台常掌握大量连接器与凭证，需要独立做密钥与任务权限治理
   evidence:
   - type: github
-    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 45,626 stars，README 含 Getting started。
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 45,626 stars，README 含 Getting
+      started。
   score:
     ranking_growth: 18
     usefulness: 29
@@ -1666,7 +1686,8 @@ skills:
   - 工作流平台通常持有回调、API key、任务上下文，必须做环境隔离与审计
   evidence:
   - type: github
-    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 15,161 stars，README 与 changelog 展示 workflow/agent 方向。
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 15,161 stars，README 与 changelog
+      展示 workflow/agent 方向。
   score:
     ranking_growth: 26
     usefulness: 28
@@ -1718,7 +1739,8 @@ skills:
   - 治理平台会汇总模型、数据、实验结果，需要明确访问控制和数据分类
   evidence:
   - type: github
-    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 26,210 stars，README 描述为 open source AI engineering platform。
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 26,210 stars，README 描述为
+      open source AI engineering platform。
   score:
     ranking_growth: 23
     usefulness: 29
@@ -1770,7 +1792,8 @@ skills:
   - 网关型平台会集中承载 prompt、路由、模型配置和日志，必须明确访问控制和留存策略
   evidence:
   - type: github
-    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 11,422 stars，README 含 Usage Example 与 gateway 部署说明。
+    note: 公开 GitHub 仓库，Apache-2.0；2026-05-31 GitHub API 显示 11,422 stars，README 含 Usage
+      Example 与 gateway 部署说明。
   score:
     ranking_growth: 24
     usefulness: 28
@@ -1824,7 +1847,8 @@ skills:
   - 对外触达流程必须有人审规则和频率
   evidence:
   - type: github
-    note: 公开 GitHub 仓库；README 描述为 workflow automation platform with 400+ integrations / 900+ templates；2026-06-01 早报验证分 91。
+    note: 公开 GitHub 仓库；README 描述为 workflow automation platform with 400+ integrations
+      / 900+ templates；2026-06-01 早报验证分 91。
   - type: daily_briefing
     note: reports/daily-skill-briefings/2026-06-01-marketing-skill-verification.md
   score:
@@ -1881,7 +1905,8 @@ skills:
   - 涉及客户名单、审批流、发布流时必须留人工节点
   evidence:
   - type: github
-    note: 公开 GitHub 仓库；README 强调 AI Workflow Automation / AI Agents / MCP，并包含 Human in the Loop / approval；2026-06-01 早报验证分 83。
+    note: 公开 GitHub 仓库；README 强调 AI Workflow Automation / AI Agents / MCP，并包含 Human
+      in the Loop / approval；2026-06-01 早报验证分 83。
   - type: daily_briefing
     note: reports/daily-skill-briefings/2026-06-01-marketing-skill-verification.md
   score:
@@ -1938,7 +1963,8 @@ skills:
   - 事件口径、权限、归因解释要人工定
   evidence:
   - type: github
-    note: 公开 GitHub 仓库；README 强调 privacy-friendly / cookie-free analytics；2026-06-01 早报验证分 82。
+    note: 公开 GitHub 仓库；README 强调 privacy-friendly / cookie-free analytics；2026-06-01
+      早报验证分 82。
   - type: daily_briefing
     note: reports/daily-skill-briefings/2026-06-01-marketing-skill-verification.md
   score:
@@ -2240,7 +2266,8 @@ skills:
   - 自托管需要数据库、备份、升级和安全运维
   evidence:
   - type: github
-    note: '公开 GitHub 仓库；README 标题为 The #1 Open-Source CRM；License 提到 GPL 主体与 Enterprise 标记文件。'
+    note: '公开 GitHub 仓库；README 标题为 The #1 Open-Source CRM；License 提到 GPL 主体与 Enterprise
+      标记文件。'
   - type: verification
     note: 2026-06-02 raw README/LICENSE 已抽检；研究分 84。
   score:
@@ -2366,7 +2393,8 @@ skills:
   - 部分目录采用 GrowthBook Enterprise License，商用集成需审查
   evidence:
   - type: github
-    note: 公开 GitHub 仓库；README 写 Open Source Feature Flags, Experimentation, and Product Analytics；LICENSE 含 Enterprise 目录说明。
+    note: 公开 GitHub 仓库；README 写 Open Source Feature Flags, Experimentation, and Product
+      Analytics；LICENSE 含 Enterprise 目录说明。
   - type: social
     note: GitHub Search/HN 显示增长实验方向公开传播；2026-06-02 评分 83。
   score:
@@ -2381,3 +2409,64 @@ skills:
   verification_status: verified_public_github_readme_license_2026-06-02
   first_seen: '2026-06-02'
   last_verified: '2026-06-02'
+- id: marketingskills
+  name: marketingskills
+  url: https://github.com/coreyhaines31/marketingskills
+  category: marketing
+  sub_category: growth
+  score: 91
+  source: github
+  description: 43个营销Skill覆盖CRO/SEO/Analytics，Claude Code安装即用
+  added_date: '2026-06-03'
+  safety: public
+  stars: 31610
+  verified: true
+- id: last30days-skill
+  name: last30days-skill
+  url: https://github.com/mvanhorn/last30days-skill
+  category: research
+  sub_category: market_intelligence
+  score: 90
+  source: github
+  description: Reddit/HN/X/YouTube一键调研，5分钟竞品动态结构化
+  added_date: '2026-06-03'
+  safety: public
+  stars: 26970
+  verified: true
+- id: ai-marketing-skills
+  name: ai-marketing-skills
+  url: https://github.com/ericosiu/ai-marketing-skills
+  category: marketing
+  sub_category: content_automation
+  score: 75
+  source: github
+  description: Growth实验/Outbound/SEO，覆盖完整营销链路
+  added_date: '2026-06-03'
+  safety: public
+  stars: 2532
+  verified: true
+- id: geoflow
+  name: GEOFlow
+  url: https://github.com/yaojingang/GEOFlow
+  category: marketing
+  sub_category: geo_content
+  score: 74
+  source: github
+  description: RAG内容工程+多站点分发，AI内容自动推WordPress
+  added_date: '2026-06-03'
+  safety: public
+  stars: 2446
+  verified: true
+- id: seo-geo-claude-skills
+  name: seo-geo-claude-skills
+  url: https://github.com/aaron-he-zhu/seo-geo-claude-skills
+  category: marketing
+  sub_category: seo
+  score: 73
+  source: github
+  description: 20个SEO+GEO Skill，CORE-EEAT+CITE框架关键词研究
+  added_date: '2026-06-03'
+  safety: public
+  stars: 1962
+  verified: true
+last_updated: '2026-06-03'
