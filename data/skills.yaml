@@ -2469,4 +2469,52 @@ skills:
   safety: public
   stars: 1962
   verified: true
-last_updated: '2026-06-03'
+- id: claude-seo
+  name: AgriciDaniel/claude-seo
+  url: https://github.com/AgriciDaniel/claude-seo
+  category: marketing
+  sub_category: seo_geo
+  score: 93
+  source: github
+  description: 25 个 SEO/GEO 子 Skill，适合网站技术 SEO、E-E-A-T、Schema 和 AI 搜索审计
+  added_date: '2026-06-04'
+  safety: public
+  stars: 8063
+  verified: true
+  status: verified_public
+  license: MIT
+  risk_level: medium
+  risk_note: 外部 API key 自管；抓取只限有权访问的公开站点；不承诺排名。
+- id: geo-seo-claude
+  name: zubair-trabzada/geo-seo-claude
+  url: https://github.com/zubair-trabzada/geo-seo-claude
+  category: marketing
+  sub_category: ai_search_geo
+  score: 88
+  source: github
+  description: GEO-first SEO Skill，检查 AI 搜索引用、llms.txt、citability 和品牌可见度
+  added_date: '2026-06-04'
+  safety: public
+  stars: 7850
+  verified: true
+  status: verified_public
+  license: MIT
+  risk_level: medium
+  risk_note: 仅作 GEO/SEO 诊断和内容改写辅助，不保证 AI 搜索引用或流量结果。
+- id: aso-skills
+  name: Eronred/aso-skills
+  url: https://github.com/Eronred/aso-skills
+  category: marketing
+  sub_category: app_store_optimization
+  score: 84
+  source: github
+  description: App Store Optimization Skill 库，覆盖关键词、元数据、竞品、商店页和应用增长检查
+  added_date: '2026-06-04'
+  safety: public
+  stars: 1451
+  verified: true
+  status: verified_public
+  license: MIT
+  risk_level: medium
+  risk_note: 应用商店素材和广告建议需人工审核，遵守 Apple/Google Play 规则。
+last_updated: '2026-06-04'
