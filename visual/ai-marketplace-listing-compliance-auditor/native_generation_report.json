@@ -1,0 +1,123 @@
+{
+  "task_id": "t_6f7cfe8a",
+  "role": "AI 平台 Listing 合规巡检员",
+  "created_at": "2026-06-14T03:28:50",
+  "deliverables_count": 5,
+  "target_size": {
+    "width": 1152,
+    "height": 2048
+  },
+  "all_final_images_9_16": true,
+  "safety": {
+    "no_customer_private_data": true,
+    "no_contract_or_pricing": true,
+    "no_secrets": true,
+    "external_publish_requires_haojing_confirmation": true
+  },
+  "files": [
+    {
+      "card": "01-cover",
+      "file": "/mnt/f/code/work/公众号文章/crossborder-digital-employee-series/20260614-ai-marketplace-listing-compliance-auditor/visual/ai-marketplace-listing-compliance-auditor-01-cover.png",
+      "native_source": "/root/.hermes/profiles/visual-agent/cache/images/openai_codex_gpt-image-2-high_20260614_031907_2e968540.png",
+      "native_copy": "/mnt/f/code/work/公众号文章/crossborder-digital-employee-series/20260614-ai-marketplace-listing-compliance-auditor/visual/native_sources/ai-marketplace-listing-compliance-auditor-01-cover--native.png",
+      "native_size": {
+        "width": 1024,
+        "height": 1536
+      },
+      "final_size": {
+        "width": 1152,
+        "height": 2048
+      },
+      "final_aspect": "1152:2048",
+      "is_9_16": true,
+      "sha256": "eb760bb0622252545a6331a1d0d0eb1f195ceaf0d4247feee46214f4a43174e9",
+      "generation_model": "openai-codex gpt-image-2-high",
+      "dimension_fix": "native image centered over blurred native background to reach strict 9:16; no local text overlay or programmatic placeholder used"
+    },
+    {
+      "card": "02-pain",
+      "file": "/mnt/f/code/work/公众号文章/crossborder-digital-employee-series/20260614-ai-marketplace-listing-compliance-auditor/visual/ai-marketplace-listing-compliance-auditor-02-pain.png",
+      "native_source": "/root/.hermes/profiles/visual-agent/cache/images/openai_codex_gpt-image-2-high_20260614_032100_b2a66e5e.png",
+      "native_copy": "/mnt/f/code/work/公众号文章/crossborder-digital-employee-series/20260614-ai-marketplace-listing-compliance-auditor/visual/native_sources/ai-marketplace-listing-compliance-auditor-02-pain--native.png",
+      "native_size": {
+        "width": 1024,
+        "height": 1536
+      },
+      "final_size": {
+        "width": 1152,
+        "height": 2048
+      },
+      "final_aspect": "1152:2048",
+      "is_9_16": true,
+      "sha256": "3ed186b1accfa18f887a21290ae998fb4b2fcc5f499cf8eed0ce9b338e5ca095",
+      "generation_model": "openai-codex gpt-image-2-high",
+      "dimension_fix": "native image centered over blurred native background to reach strict 9:16; no local text overlay or programmatic placeholder used"
+    },
+    {
+      "card": "03-compare",
+      "file": "/mnt/f/code/work/公众号文章/crossborder-digital-employee-series/20260614-ai-marketplace-listing-compliance-auditor/visual/ai-marketplace-listing-compliance-auditor-03-compare.png",
+      "native_source": "/root/.hermes/profiles/visual-agent/cache/images/openai_codex_gpt-image-2-high_20260614_032211_4f3eb92f.png",
+      "native_copy": "/mnt/f/code/work/公众号文章/crossborder-digital-employee-series/20260614-ai-marketplace-listing-compliance-auditor/visual/native_sources/ai-marketplace-listing-compliance-auditor-03-compare--native.png",
+      "native_size": {
+        "width": 1024,
+        "height": 1536
+      },
+      "final_size": {
+        "width": 1152,
+        "height": 2048
+      },
+      "final_aspect": "1152:2048",
+      "is_9_16": true,
+      "sha256": "55730716ad48369ab49709db05c2b322ae8d8f82f80a187967e11478eac3be8a",
+      "generation_model": "openai-codex gpt-image-2-high",
+      "dimension_fix": "native image centered over blurred native background to reach strict 9:16; no local text overlay or programmatic placeholder used"
+    },
+    {
+      "card": "04-workflow-prompts",
+      "file": "/mnt/f/code/work/公众号文章/crossborder-digital-employee-series/20260614-ai-marketplace-listing-compliance-auditor/visual/ai-marketplace-listing-compliance-auditor-04-workflow-prompts.png",
+      "native_source": "/root/.hermes/profiles/visual-agent/cache/images/openai_codex_gpt-image-2-high_20260614_032457_866f446f.png",
+      "native_copy": "/mnt/f/code/work/公众号文章/crossborder-digital-employee-series/20260614-ai-marketplace-listing-compliance-auditor/visual/native_sources/ai-marketplace-listing-compliance-auditor-04-workflow-prompts--native.png",
+      "native_size": {
+        "width": 1024,
+        "height": 1536
+      },
+      "final_size": {
+        "width": 1152,
+        "height": 2048
+      },
+      "final_aspect": "1152:2048",
+      "is_9_16": true,
+      "sha256": "371be4568b2486bca8036f1569cd4c412a44edb4b9fefde4cca455dae399fa8c",
+      "generation_model": "openai-codex gpt-image-2-high",
+      "dimension_fix": "native image centered over blurred native background to reach strict 9:16; no local text overlay or programmatic placeholder used"
+    },
+    {
+      "card": "05-toolkit-pilot",
+      "file": "/mnt/f/code/work/公众号文章/crossborder-digital-employee-series/20260614-ai-marketplace-listing-compliance-auditor/visual/ai-marketplace-listing-compliance-auditor-05-toolkit-pilot.png",
+      "native_source": "/root/.hermes/profiles/visual-agent/cache/images/openai_codex_gpt-image-2-high_20260614_032741_bec5deaa.png",
+      "native_copy": "/mnt/f/code/work/公众号文章/crossborder-digital-employee-series/20260614-ai-marketplace-listing-compliance-auditor/visual/native_sources/ai-marketplace-listing-compliance-auditor-05-toolkit-pilot--native.png",
+      "native_size": {
+        "width": 1024,
+        "height": 1536
+      },
+      "final_size": {
+        "width": 1152,
+        "height": 2048
+      },
+      "final_aspect": "1152:2048",
+      "is_9_16": true,
+      "sha256": "fe6d5d8479dbc22d2880f9dfe5d7a7bd8e310659f8a1435ab602f9ee89e49fac",
+      "generation_model": "openai-codex gpt-image-2-high",
+      "dimension_fix": "native image centered over blurred native background to reach strict 9:16; no local text overlay or programmatic placeholder used"
+    }
+  ],
+  "visual_qa": {
+    "visual_style": "5 张均为原生 GPT Image 2 high 风格：深蓝紫科技办公背景、3D clay/toy 质感、亮色信息卡与 SKU/风险标签元素；非 HTML/PIL/SVG 模板渲染。",
+    "card_01": "通过：系列首页属性明确，含 AI 平台 Listing 合规巡检员主标题、岗位职责/核心技能/业务作用三模块与署名。",
+    "card_02": "通过：老板痛点明确，含广告暂停、库存、平台提醒、高风险词与署名。",
+    "card_03": "通过：旧方法 vs 数字员工左右对比清晰，含 PASS/REWRITE/BLOCK 与署名。",
+    "card_04": "通过：工作流、SKU 扫描机、真实提示词、工具栈与署名完整。",
+    "card_05": "通过：第一周 50 SKU 试点、工具栈、7 天游线、验收边界与署名完整。",
+    "known_limitations": "原生生成会有少量非核心微文案改写/细字不完全逐字；核心标题、结构和署名可读。"
+  }
+}
